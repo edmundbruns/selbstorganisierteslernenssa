@@ -1,0 +1,1778 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>SOL-Lernpfad Schulsozialarbeit Niedersachsen | Band 1 Modul 1</title>
+<style>
+:root{
+  --bg:#f4f6fa;--ink:#172033;--muted:#5d667a;--line:#d4dcea;
+  --shadow:0 10px 28px rgba(23,32,51,.07);--radius:18px;
+  --tb:#1a3d6b;--tb2:linear-gradient(135deg,#1a3d6b,#2a5fa8);--ta:#184f8f;--tal:#dce8f5;--tbg:#eef2f8;--tbd:#b8c8e0;
+  --ab:#1c5c35;--ab2:linear-gradient(135deg,#1c5c35,#2e8b57);--aa:#1f7a4d;--aal:#e4f3ea;--abg:#f5f9f4;--abd:#a8ceaf;
+  --red:#9b2c2c;--red2:#fdeaea;--amber:#7a4f00;--amber2:#fff3d0;--green:#1f7a4d;--green2:#e4f3ea;--acc:#1f7a4d;--border:#d4dcea;--card:#fff;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;background:var(--bg);color:var(--ink);line-height:1.65;font-size:1rem}
+.wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+header{background:linear-gradient(135deg,#162e50,#1e4d8c);color:#fff;padding:36px 20px 30px}
+.eyebrow{letter-spacing:.1em;text-transform:uppercase;font-size:.75rem;opacity:.85;font-weight:700;margin-bottom:10px}
+h1{font-size:clamp(1.55rem,3.5vw,2.6rem);line-height:1.12;margin-bottom:10px}
+.lead{font-size:1rem;max-width:800px;opacity:.9;line-height:1.7}
+.pillrow{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}
+.pill{background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.28);padding:6px 12px;border-radius:999px;font-size:.82rem}
+main{padding:26px 0 64px}
+.grid{display:grid;grid-template-columns:252px 1fr;gap:22px;align-items:start}
+/* NAV */
+nav{position:sticky;top:14px;background:#fff;border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);padding:14px 12px;z-index:10}
+.nav-group-label{font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;font-weight:700;color:var(--muted);padding:10px 10px 4px;display:block}
+nav a{display:block;text-decoration:none;color:var(--ink);padding:8px 10px;border-radius:10px;font-size:.88rem;font-weight:500;transition:background .15s,color .15s;line-height:1.35}
+nav a:hover{background:#f0f4fb;color:var(--ta)}
+nav a.at{background:var(--tal);color:var(--ta);font-weight:700}
+nav a.aa{background:var(--aal);color:var(--aa);font-weight:700}
+hr.nd{border:none;border-top:1px solid var(--line);margin:8px 0}
+.mob-toggle{display:none;width:100%;border:1px solid var(--line);background:#fff;padding:10px 14px;border-radius:12px;font:inherit;font-size:.95rem;font-weight:600;cursor:pointer;text-align:left;margin-bottom:16px}
+.nav-links{display:block}
+/* SECTIONS */
+section{border-radius:var(--radius);box-shadow:var(--shadow);margin-bottom:20px;overflow:hidden;scroll-margin-top:20px}
+.sh{padding:16px 24px 14px;color:#fff}
+.sh h2{font-size:1.25rem;font-weight:700;margin:0}
+.sh .sub{font-size:.85rem;opacity:.85;margin-top:3px}
+.sb{padding:22px 24px 24px}
+section.T{border:1px solid var(--tbd)}
+section.T .sh{background:var(--tb2)}
+section.T .sb{background:var(--tbg)}
+section.A{border:1px solid var(--abd)}
+section.A .sh{background:var(--ab2)}
+section.A .sb{background:var(--abg)}
+/* PROGRESS */
+.progress{height:9px;background:#dde4ee;border-radius:999px;overflow:hidden;margin-top:8px}
+.bar{height:100%;width:0;background:var(--aa);transition:.3s}
+.small{font-size:.83rem}
+/* BOXES */
+.box{border-left:4px solid var(--ta);background:#dce8f5;padding:13px 16px;border-radius:12px;margin:12px 0;font-size:.95rem}
+.box.green{border-color:var(--green);background:var(--green2)}
+.box.amber{border-color:var(--amber);background:var(--amber2)}
+.box.red{border-color:var(--red);background:var(--red2)}
+.box b{display:block;margin-bottom:4px}
+/* DEF BLOCK */
+.def-block{background:#fff;border:1px solid var(--tbd);border-radius:14px;padding:16px 18px;margin:14px 0}
+.def-label{font-size:.75rem;text-transform:uppercase;letter-spacing:.07em;font-weight:700;color:var(--ta);margin-bottom:6px}
+/* TABLE */
+table{width:100%;border-collapse:collapse;margin:14px 0;font-size:.93rem}
+th{background:var(--ta);color:#fff;padding:9px 12px;text-align:left;font-weight:600}
+td{padding:9px 12px;border-bottom:1px solid var(--line);vertical-align:top}
+tr:nth-child(even) td{background:#f0f4fb}
+/* LERNZIELE */
+.ziele{display:grid;gap:8px;margin-top:10px}
+.ziel{display:flex;gap:10px;align-items:flex-start;background:#fff;border:1px solid var(--tbd);border-radius:11px;padding:10px 14px;font-size:.93rem}
+.ziel::before{content:"→";color:var(--ta);font-weight:700;flex-shrink:0;margin-top:1px}
+/* AMPEL */
+.ampel-grid{display:grid;gap:10px;margin-top:12px}
+.ampel-row{display:flex;align-items:center;gap:12px;background:#fff;border:1px solid var(--line);border-radius:12px;padding:10px 14px;font-size:.9rem}
+.ampel-text{flex:1}
+.ampel-btns{display:flex;gap:6px;flex-shrink:0}
+.ampel-btn{width:28px;height:28px;border-radius:50%;border:2px solid transparent;cursor:pointer;transition:transform .15s,border-color .15s;font-size:.7rem;font-weight:700;color:#fff}
+.ampel-btn.g{background:#2e7d4f}
+.ampel-btn.y{background:#c47d00}
+.ampel-btn.r{background:#9b2c2c}
+.ampel-btn.active{border-color:var(--ink);transform:scale(1.2)}
+/* AUDIO PLACEHOLDER */
+.audio-placeholder{background:#fff;border:2px dashed var(--tbd);border-radius:14px;padding:20px;text-align:center;margin:14px 0;color:var(--muted);font-size:.93rem}
+.audio-placeholder .icon{font-size:2rem;margin-bottom:8px}
+/* CARDS */
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:12px 0}
+.card{background:#fff;border:1px solid var(--tbd);border-radius:14px;padding:14px}
+.card strong{display:block;margin-bottom:6px;color:var(--ta);font-size:.95rem}
+.card p{margin:0;font-size:.9rem;line-height:1.55}
+/* PRINZIPIEN SORT */
+.sort-area{display:grid;gap:8px;margin:12px 0}
+.sort-item{background:#fff;border:1px solid var(--tbd);border-radius:12px;padding:12px 14px;cursor:grab;display:flex;gap:10px;align-items:flex-start;font-size:.92rem;transition:box-shadow .15s}
+.sort-item:active{cursor:grabbing}
+.sort-item.drag-over{box-shadow:0 0 0 2px var(--ta)}
+.sort-handle{color:var(--muted);font-size:1.1rem;flex-shrink:0;margin-top:1px;user-select:none}
+.sort-item b{color:var(--ta);display:block;margin-bottom:3px}
+/* FLIP CARDS */
+.flipcard-row{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:14px 0}
+.flipcard{height:220px;perspective:900px;cursor:pointer}
+.flipcard-inner{position:relative;width:100%;height:100%;transition:transform .5s;transform-style:preserve-3d}
+.flipcard.flipped .flipcard-inner{transform:rotateY(180deg)}
+.flipcard-front,.flipcard-back{position:absolute;width:100%;height:100%;backface-visibility:hidden;border-radius:14px;padding:18px;display:flex;flex-direction:column;justify-content:center}
+.flipcard-front{background:var(--ta);color:#fff;align-items:center;text-align:center;border:2px solid var(--tbd)}
+.flipcard-front.teal{background:#2e6b8a}
+.fc-label{font-size:.75rem;text-transform:uppercase;letter-spacing:.09em;opacity:.8;margin-bottom:8px}
+.fc-title{font-size:1.1rem;font-weight:700;line-height:1.3}
+.fc-hint{font-size:.78rem;opacity:.7;margin-top:10px}
+.flipcard-back{background:#fff;border:2px solid var(--tbd);transform:rotateY(180deg);font-size:.87rem;line-height:1.6;overflow-y:auto}
+.flipcard-back .fc-back-title{font-weight:700;color:var(--ta);margin-bottom:8px;font-size:.95rem}
+.flipcard-back ul{padding-left:16px}
+.flipcard-back li{margin-bottom:4px}
+.fc-warn{margin-top:10px;padding:7px 10px;border-radius:8px;font-size:.82rem}
+.fc-warn.amber{background:var(--amber2);border-left:3px solid var(--amber)}
+.fc-warn.green{background:var(--green2);border-left:3px solid var(--green)}
+/* MODULE MAP */
+.module-map{display:grid;grid-template-columns:repeat(4,1fr);gap:9px;margin-top:14px}
+.mod{padding:11px 13px;border:1px solid var(--tbd);border-radius:12px;background:#fff;font-size:.88rem}
+.mod b{color:var(--ta);display:block;margin-bottom:3px;font-size:.83rem}
+.mod.cur{border-color:var(--ta);background:var(--tal)}
+/* ABGRENZUNG D&D */
+.dnd-abgr{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:14px 0}
+.dnd-pool{background:#fff;border:1px solid var(--abd);border-radius:14px;padding:14px}
+.dnd-pool h4{font-size:.8rem;text-transform:uppercase;letter-spacing:.07em;color:var(--aa);font-weight:700;margin-bottom:10px}
+.dnd-chips{display:flex;flex-wrap:wrap;gap:7px;min-height:40px}
+.chip{background:var(--aal);border:1px solid var(--abd);border-radius:999px;padding:6px 12px;font-size:.83rem;cursor:grab;user-select:none;transition:opacity .15s;white-space:nowrap}
+.chip:active{cursor:grabbing;opacity:.6}
+.chip.dragging{opacity:.35}
+.drop-zone{border:2px dashed var(--line);border-radius:12px;padding:12px;min-height:80px;transition:border-color .2s,background .2s}
+.drop-zone.over{border-color:var(--aa);background:var(--aal)}
+.drop-zone h4{font-size:.8rem;text-transform:uppercase;letter-spacing:.07em;color:var(--muted);font-weight:700;margin-bottom:8px}
+.dnd-fb{margin-top:12px;padding:11px 14px;border-radius:11px;font-size:.91rem;display:none}
+.dnd-fb.show{display:block}
+.dnd-fb.ok{background:var(--green2);border-left:4px solid var(--green)}
+.dnd-fb.hint{background:var(--amber2);border-left:4px solid var(--amber)}
+/* LÜCKENTEXT */
+.luecke{display:inline-block;min-width:120px;border-bottom:2px solid var(--ta);background:var(--tal);border-radius:6px;padding:2px 8px;font:inherit;font-size:.92rem;color:var(--ink);text-align:center;transition:border-color .2s}
+.luecke:focus{outline:none;border-color:var(--aa)}
+.luecke.correct{border-color:var(--green);background:var(--green2)}
+.luecke.wrong{border-color:var(--red);background:var(--red2)}
+.luecke-para{line-height:2.2;font-size:.93rem;margin:12px 0}
+/* DRAG & DROP AUFGABE 2 */
+.dnd-area{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:14px 0}
+.dnd-targets{display:grid;gap:10px}
+/* BRANCHING */
+.branch{background:#fff;border:1px solid var(--abd);border-radius:var(--radius);overflow:hidden;margin:14px 0}
+.branch-scene{display:none;padding:20px}
+.branch-scene.active{display:block}
+.branch-situation{background:var(--amber2);border-left:4px solid var(--amber);border-radius:12px;padding:14px 16px;margin-bottom:16px;font-size:.95rem}
+.branch-situation b{display:block;margin-bottom:6px}
+.branch-choices{display:grid;gap:9px}
+.branch-choice{border:1px solid var(--abd);background:#fff;padding:12px 16px;border-radius:12px;cursor:pointer;text-align:left;font:inherit;font-size:.92rem;transition:border-color .15s,background .15s;line-height:1.45}
+.branch-choice:hover{border-color:var(--aa);background:var(--aal)}
+.branch-outcome{background:var(--green2);border-left:4px solid var(--green);border-radius:12px;padding:14px 16px;margin-bottom:14px;font-size:.93rem;display:none}
+.branch-outcome.warn{background:var(--amber2);border-left-color:var(--amber)}
+.branch-outcome.bad{background:var(--red2);border-left-color:var(--red)}
+.branch-outcome.show{display:block}
+.branch-nav{display:flex;gap:8px;margin-top:14px;flex-wrap:wrap}
+.branch-progress{display:flex;gap:6px;align-items:center;padding:10px 20px;background:var(--abg);border-bottom:1px solid var(--abd);font-size:.82rem;color:var(--muted)}
+.branch-step{width:8px;height:8px;border-radius:50%;background:var(--abd)}
+.branch-step.done{background:var(--aa)}
+.branch-step.cur{background:var(--amber);width:10px;height:10px}
+/* ANNOTATION */
+.anno-text{background:#fff;border:1px solid var(--abd);border-radius:14px;padding:16px;font-size:.93rem;line-height:2;margin:12px 0}
+.anno-sent{border-radius:6px;cursor:pointer;padding:2px 4px;transition:background .15s}
+.anno-sent:hover{background:#fff3d0}
+.anno-sent.marked{background:#fff3d0;border-bottom:2px solid var(--amber)}
+.anno-sent.grenze{background:var(--aal);border-bottom:2px solid var(--aa)}
+.anno-legend{display:flex;gap:12px;font-size:.82rem;color:var(--muted);margin-bottom:8px;flex-wrap:wrap}
+.anno-legend span{display:flex;align-items:center;gap:5px}
+.anno-legend .dot{width:12px;height:12px;border-radius:3px;display:inline-block}
+.anno-count{font-size:.85rem;color:var(--aa);margin-top:8px}
+/* TASK */
+.task{background:#fff;border:1px solid var(--abd);border-radius:14px;padding:16px 18px;margin:14px 0}
+.task h3{font-size:1rem;margin-bottom:8px;color:var(--ab)}
+.choices{display:grid;gap:8px;margin-top:10px}
+.choice{border:1px solid var(--abd);background:#fff;padding:10px 14px;border-radius:11px;cursor:pointer;text-align:left;font:inherit;font-size:.93rem;transition:border-color .15s,background .15s}
+.choice:hover{border-color:var(--aa);background:var(--aal)}
+.choice.correct{border-color:var(--green);background:var(--green2);pointer-events:none}
+.choice.wrong{border-color:var(--red);background:var(--red2);pointer-events:none}
+.feedback{display:none;margin-top:10px;padding:11px 14px;border-radius:11px;background:var(--green2);font-size:.91rem;border-left:4px solid var(--green)}
+.feedback.show{display:block}
+textarea{width:100%;border:1px solid var(--abd);border-radius:11px;padding:11px 13px;font:inherit;font-size:.93rem;background:#fff;min-height:88px;resize:vertical;transition:border-color .15s;line-height:1.6}
+textarea:focus{border-color:var(--aa);outline:none}
+/* ACCORDION */
+.accordion{border:1px solid var(--line);border-radius:14px;overflow:hidden;margin:10px 0}
+.acc-header{width:100%;border:none;background:#f3f7f2;padding:12px 16px;text-align:left;font:inherit;font-size:.95rem;font-weight:700;cursor:pointer;display:flex;justify-content:space-between;align-items:center;color:var(--ab)}
+.acc-header:hover{background:var(--aal)}
+.acc-icon{font-size:1rem;transition:transform .2s;font-style:normal}
+.acc-body{max-height:0;overflow:hidden;transition:max-height .3s ease}
+.acc-body.open{max-height:1600px}
+.acc-inner{padding:14px 16px 16px}
+/* FEHLERWERKSTATT */
+.fehler-card{background:#fff;border:1px solid var(--line);border-radius:14px;padding:14px 16px;margin:10px 0}
+.fehler-label{font-size:.78rem;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:var(--red);margin-bottom:6px}
+.slider-row{display:flex;align-items:center;gap:10px;margin:10px 0}
+.slider-row label{font-size:.83rem;color:var(--muted);white-space:nowrap}
+input[type=range]{flex:1;accent-color:var(--aa)}
+.slider-val{font-weight:700;color:var(--aa);min-width:24px;text-align:center}
+.loesung-box{display:none;margin-top:10px;padding:10px 13px;border-radius:10px;background:var(--green2);font-size:.9rem;border-left:3px solid var(--green)}
+.loesung-box.show{display:block}
+/* REFLEXIONSRASTER */
+.raster{width:100%;border-collapse:collapse;margin:12px 0;font-size:.9rem}
+.raster th{background:var(--aa);color:#fff;padding:9px 12px;text-align:left;font-size:.85rem}
+.raster td{padding:6px 8px;border:1px solid var(--abd);vertical-align:top}
+.raster textarea{min-height:70px;border:none;border-radius:0;padding:6px;font-size:.88rem}
+.raster textarea:focus{outline:1px solid var(--aa)}
+/* BUTTONS */
+.btn{border:0;background:var(--aa);color:#fff;padding:9px 15px;border-radius:11px;font:inherit;font-weight:700;font-size:.88rem;cursor:pointer;transition:opacity .15s}
+.btn:hover{opacity:.85}
+.btn.sec{background:#eef2f7;color:var(--ink);border:1px solid var(--line)}
+.btn:disabled{opacity:.5;cursor:default}
+.toolbar{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px;align-items:center}
+.saved{font-size:.78rem;color:var(--green);opacity:0;transition:opacity .4s}
+.saved.show{opacity:1}
+.tag{display:inline-block;background:#e8f0e4;border:1px solid var(--abd);border-radius:999px;padding:3px 9px;font-size:.8rem;margin:2px;color:var(--ab)}
+/* CHECKLIST */
+.checklist{list-style:none;display:grid;gap:8px;margin-top:10px}
+.checklist li{display:flex;gap:10px;align-items:flex-start;font-size:.93rem}
+.checklist input[type=checkbox]{margin-top:3px;width:16px;height:16px;accent-color:var(--aa);flex-shrink:0;cursor:pointer}
+.checklist label{cursor:pointer}
+/* KOMPETENZ AMPEL */
+.komp-grid{display:grid;gap:8px;margin-top:12px}
+.komp-row{display:flex;align-items:center;gap:10px;background:#fff;border:1px solid var(--abd);border-radius:11px;padding:10px 14px;font-size:.88rem}
+.komp-row .kt{flex:1}
+.komp-row .ampel-btns{flex-shrink:0}
+/* TRANSFER */
+.transfer-steps{counter-reset:s;display:grid;gap:10px;margin-top:12px}
+.ts{display:flex;gap:12px;align-items:flex-start;background:#fff;border:1px solid var(--abd);border-radius:12px;padding:12px 14px}
+.ts-num{flex-shrink:0;width:26px;height:26px;background:var(--aa);color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:.82rem;margin-top:2px}
+.ts b{display:block;margin-bottom:4px;font-size:.94rem;color:var(--ab)}
+.ts span{font-size:.88rem;color:var(--muted);line-height:1.55}
+/* PRINZIPIEN GRID */
+.prinzipien{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin:12px 0}
+.prinzip{background:#fff;border-left:4px solid var(--ta);border:1px solid var(--tbd);border-radius:12px;padding:12px 14px}
+.prinzip b{display:block;color:var(--ta);margin-bottom:4px;font-size:.93rem}
+.prinzip p{margin:0;font-size:.88rem;line-height:1.55;color:#3a4557}
+footer{padding:22px;color:var(--muted);text-align:center;font-size:.83rem;border-top:1px solid var(--line)}
+
+/* METHODENKOFFER / SENDEN / VALIDIERUNG */
+.method-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:14px 0}
+.method-tile{background:#fff;border:1px solid var(--abd);border-radius:14px;padding:13px 14px;font-size:.88rem}
+.method-tile b{display:block;color:var(--ab);margin-bottom:4px}
+.analysis-board{background:#fff;border:1px solid var(--abd);border-radius:14px;padding:14px 16px;margin:12px 0}
+.analysis-board h4{font-size:.95rem;color:var(--ab);margin-bottom:6px}
+.analysis-board p{font-size:.88rem;color:var(--muted);margin-bottom:8px}
+.must-box{display:grid;gap:8px;margin-top:10px}
+.must-row{background:#fff;border:1px solid var(--abd);border-radius:11px;padding:9px 12px;font-size:.88rem}
+.validation-msg{display:none;margin-top:10px;padding:10px 13px;border-radius:10px;background:var(--amber2);border-left:4px solid var(--amber);font-size:.88rem}
+.validation-msg.show{display:block}
+.send-panel{background:#fff;border-top:3px solid var(--aa);padding:32px 0;margin-top:0}
+.send-button{background:var(--aa);color:#fff;border:none;padding:12px 28px;border-radius:8px;font-size:1rem;font-weight:700;cursor:pointer}
+.send-button:disabled{opacity:.5;cursor:not-allowed}
+@media(max-width:860px){.method-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:560px){.method-grid{grid-template-columns:1fr}}
+
+/* BACK TO TOP */
+#btt{position:fixed;bottom:22px;right:22px;background:var(--ta);color:#fff;border:none;border-radius:50%;width:42px;height:42px;font-size:1.2rem;cursor:pointer;box-shadow:0 4px 12px rgba(0,0,0,.2);opacity:0;transition:opacity .3s;z-index:100;display:flex;align-items:center;justify-content:center}
+#btt.vis{opacity:1}
+/* NUTZUNGSHINWEIS */
+.hinweis-box{background:#fff;border:1px solid var(--tbd);border-radius:14px;padding:16px 20px;margin:14px 0}
+.hinweis-box h3{color:var(--ta);margin-bottom:10px;font-size:1rem}
+.hinweis-steps{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:10px}
+.hinweis-step{background:var(--tal);border-radius:12px;padding:10px 12px;font-size:.84rem;text-align:center}
+.hinweis-step b{display:block;color:var(--ta);margin-bottom:4px;font-size:.92rem}
+@media(max-width:860px){.hinweis-steps{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:860px){
+  .grid{grid-template-columns:1fr}
+  nav{position:relative;top:0}
+  .nav-links{display:none}.nav-links.open{display:block}
+  .mob-toggle{display:block}
+  .cards,.module-map,.flipcard-row,.dnd-abgr,.dnd-area,.prinzipien{grid-template-columns:1fr}
+  .module-map{grid-template-columns:repeat(2,1fr)}
+  .sb{padding:16px 16px 18px}
+  header{padding:26px 16px 22px}
+}
+@media print{
+  nav,.toolbar,.btn,.mob-toggle,.saved{display:none!important}
+  .grid{display:block}
+  section{break-inside:avoid;box-shadow:none}
+  .acc-body{max-height:none!important;display:block}
+  .acc-inner{padding:14px}
+  body{background:white}
+}
+</style>
+</head>
+<body>
+<header>
+<div class="wrap">
+  <div class="eyebrow">SOL-Lernpfad Schulsozialarbeit Niedersachsen</div>
+  <h1>Band 1, Modul 1: Was ist Schulsozialarbeit?</h1>
+  <p class="lead">Ein kompetenzorientierter Lernpfad für Studium, Anerkennungspraktikum und Berufseinstieg. Schwerpunkt: Auftrag, professionelle Rolle, Grenzen und erste begründete Entscheidungen im schulischen Alltag.</p>
+  <div class="pillrow" style="margin-top:12px;gap:10px;align-items:center">
+    <label for="teilnehmer-name" style="font-weight:600;color:#fff">Ihr Name:</label>
+    <input id="teilnehmer-name" type="text" placeholder="Vorname Nachname" style="padding:6px 12px;border-radius:6px;border:none;font-size:1rem;min-width:200px;background:#fff;color:#1a2340" oninput="updateHeaderSendBtn()">
+    <button id="header-send-btn" class="send-button" onclick="sendToSheets()" disabled style="padding:6px 16px;font-size:.9rem">Jetzt senden</button>
+    <span id="header-send-status" style="font-size:.8rem;color:#c8e6c9;margin-left:4px"></span>
+  </div>
+  <div style="font-size:.78rem;color:#c8d8f0;margin-top:4px">Geben Sie Ihren vollständigen Namen ein und erledigen Sie alle Aufgaben, bevor Sie senden.</div>
+  <div class="pillrow">
+    <span class="pill">Lernzeit: 50–70 Minuten</span>
+    <span class="pill">Niveau: Einstieg / Praxisphase</span>
+    <span class="pill">Format: Selbststudium</span>
+    <span class="pill">Mit Gelingensnachweis</span>
+  </div>
+</div>
+</header>
+
+<main class="wrap">
+<button class="mob-toggle" id="navToggle">Zum Abschnitt springen</button>
+<div class="grid">
+
+<nav>
+<div class="nav-links" id="navLinks">
+  <span class="nav-group-label">Orientierung</span>
+  <a href="#reihe" data-t="T">Reihe und Ziel</a>
+  <a href="#lernziele" data-t="T">Lernziele</a>
+  <a href="#nutzung" data-t="T">Wie nutze ich dieses Modul?</a>
+  <a href="#vorwissen" data-t="A">Vorwissen aktivieren</a>
+  <hr class="nd">
+  <span class="nav-group-label">Theorie</span>
+  <a href="#audio" data-t="T">Einstieg: Audio</a>
+  <a href="#audiofragen" data-t="A">Kritische Audiofragen</a>
+  <a href="#definition" data-t="T">Definition und Auftrag</a>
+  <a href="#rechtsgrundlagen" data-t="T">Rechtsgrundlagen NI</a>
+  <a href="#rolle" data-t="T">Professionelle Rolle</a>
+  <a href="#prinzipien" data-t="T">Grundprinzipien</a>
+  <a href="#abgrenzung" data-t="T">Abgrenzung</a>
+  <a href="#wissenschaft" data-t="T">Wissenschaftsbezug</a>
+  <hr class="nd">
+  <span class="nav-group-label">Anwendung</span>
+  <a href="#fall" data-t="A">Einstiegsfall</a>
+  <a href="#aufgaben" data-t="A">Interaktive Aufgaben</a>
+  <a href="#methodenkoffer" data-t="A">Methodenkoffer</a>
+  <a href="#fehlerwerkstatt" data-t="A">Fehlerwerkstatt</a>
+  <hr class="nd">
+  <span class="nav-group-label">Abschluss</span>
+  <a href="#reflexion" data-t="A">Reflexion</a>
+  <a href="#fallgutachten" data-t="A">Fallgutachten</a>
+  <a href="#gelingen" data-t="A">Gelingensnachweis</a>
+  <a href="#literatur" data-t="T">Literatur & Quellen</a>
+  <a href="#transfer" data-t="A">Transfer in die Praxis</a>
+</div>
+<div style="margin:14px 4px 2px">
+  <div class="small muted">Bearbeitungsfortschritt</div>
+  <div class="progress"><div id="bar" class="bar"></div></div>
+  <div id="score" class="small muted" style="margin-top:5px">0 von 17 Aufgaben erledigt</div>
+</div>
+</nav>
+
+<div>
+
+<!-- ===== THEORIE ===== -->
+
+<section class="T" id="reihe">
+<div class="sh"><h2>1. Die Reihe im Überblick</h2></div>
+<div class="sb">
+  <p><b>Band 1 umfasst vier Grundlagenmodule.</b> Dieses erste Modul klärt den Auftrag der Schulsozialarbeit, ihre professionelle Rolle und erste Rollengrenzen im schulischen Alltag.</p>
+  <div class="module-map">
+    <div class="mod cur"><b>Modul 1</b>Was ist Schulsozialarbeit?</div>
+    <div class="mod"><b>Modul 2</b>Der Berufseinstieg, die ersten 100 Tage</div>
+    <div class="mod"><b>Modul 3</b>Zielgruppen und Bedarfslagen NI</div>
+    <div class="mod"><b>Modul 4</b>Fachstandards &amp; Qualität</div>
+  </div>
+  <div class="box" style="margin-top:16px"><b>Einordnung</b>Die gesamte SOL-Reihe kann später weitere Bände zu Recht, Beratung, Kinderschutz, Konflikten, Prävention, Inklusion, Kooperation sowie Dokumentation und Evaluation umfassen. Band 1 bleibt bewusst kompakt: vier Module, ein gemeinsames Fundament.</div>
+  <div class="box green"><b>Arbeitsprinzip</b>Nicht nur wissen, sondern begründet entscheiden können. Jede Einheit endet mit einem Gelingensnachweis.</div>
+  <div class="box amber"><b>Hinweis für Hochschulen und Weiterbildungsträger</b>Dieses Modul ist als Demonstrationsmodul einer modularen Qualifizierungsplattform angelegt. Es kann im Selbststudium, in Blended-Learning-Seminaren oder als Baustein eines Zertifikatskurses eingesetzt werden. Die fachliche Prüfung, curriculare Einordnung und Zertifizierung verbleiben bei der jeweiligen Hochschule oder beim jeweiligen Träger.</div>
+</div>
+</section>
+
+<section class="T" id="lernziele">
+<div class="sh"><h2>2. Lernziele</h2></div>
+<div class="sb">
+  <p>Nach Abschluss dieser Einheit können Sie die folgenden Kompetenzen nicht nur benennen, sondern in einem konkreten Praxisfall begründet anwenden und im Abschnitt „Gelingensnachweis“ überprüfen.</p>
+  <div class="ziele">
+    <div class="ziel" id="lz1">den gesetzlichen und fachlichen Auftrag der Schulsozialarbeit anhand eines Praxisfalls mit Bezug auf Jugendhilfe und Schule erläutern.</div>
+    <div class="ziel" id="lz2">die professionelle Rolle gegenüber Lehrkräften, Schülerinnen und Schülern sowie Erziehungsberechtigten fallbezogen bestimmen und begründet abgrenzen.</div>
+    <div class="ziel" id="lz3">einen Rollenkonflikt im schulischen Alltag identifizieren, fachlich bewerten und eine angemessene Erstreaktion formulieren.</div>
+    <div class="ziel" id="lz4">Vertraulichkeit, Schweigepflicht und kollegiale Kooperation in einer konkreten Gesprächssituation abwägen.</div>
+    <div class="ziel" id="lz5">das 4-Fragen-Schema zur Auftragsklärung auf den Fall „Ben und Frau Kramer“ anwenden und daraus einen nächsten Handlungsschritt ableiten.</div>
+  </div>
+  <div class="box green" style="margin-top:12px"><b>Kompetenznachweis</b>Die Lernziele werden am Ende nicht durch eine reine Selbsteinschätzung, sondern durch ein kurzes Fallgutachten und einen Gelingensnachweis überprüft.</div>
+</div>
+</section>
+
+<section class="T" id="nutzung">
+<div class="sh"><h2>3. Wie nutze ich dieses Modul?</h2></div>
+<div class="sb">
+  <p>Dieses Modul ist für das Selbststudium konzipiert. Es kann alleine oder in Lerngruppen bearbeitet werden. Die folgende Empfehlung zeigt einen sinnvollen Durchlauf:</p>
+  <div class="hinweis-steps">
+    <div class="hinweis-step"><b>Schritt 1</b>Vorwissen aktivieren, bevor Sie die Theorie lesen</div>
+    <div class="hinweis-step"><b>Schritt 2</b>Audio-Einstieg anhören, dann Theorieabschnitte lesen</div>
+    <div class="hinweis-step"><b>Schritt 3</b>Aufgaben, Szenario und Fehlerwerkstatt bearbeiten, eigene Antworten formulieren, nicht überspringen</div>
+    <div class="hinweis-step"><b>Schritt 4</b>Gelingensnachweis ausfüllen, Kompetenz-Ampel setzen und drucken oder als PDF speichern</div>
+  </div>
+  <div class="box amber" style="margin-top:12px"><b>Hinweis zur Nutzung</b>Ihre Eingaben werden zunächst lokal in Ihrem Browser gespeichert. Erst wenn Sie aktiv auf „Jetzt senden“ klicken, werden ausgewählte Angaben an die hinterlegte Google-Sheets-Auswertung übertragen. Wenn Sie einen anderen Browser oder ein anderes Gerät verwenden, sind die Eingaben nicht verfügbar. Für eine dauerhafte Sicherung empfehlen wir zusätzlich den Ausdruck oder die PDF-Speicherung am Ende.</div>
+  <p style="margin-top:12px;font-size:.9rem"><b>Bearbeitungszeit:</b> ca. 50–70 Minuten. Eine Unterbrechung ist jederzeit möglich, Ihre Eingaben bleiben gespeichert. <b>Gruppenarbeit:</b> Das Branching-Szenario eignet sich gut zur gemeinsamen Diskussion; der Gelingensnachweis sollte individuell bearbeitet werden.</p>
+</div>
+</section>
+
+<section class="A" id="vorwissen">
+<div class="sh"><h2>4. Vorwissen aktivieren</h2><div class="sub">Bitte vor dem Lesen der Theorieabschnitte ausfüllen</div></div>
+<div class="sb">
+  <p>Notieren Sie kurz Ihre bisherigen Vorstellungen, <em>bevor</em> Sie die Theorieabschnitte lesen. Es gibt keine falschen Antworten. Kehren Sie nach Abschluss der Theorie hierher zurück und prüfen Sie, was sich verändert hat.</p>
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:12px 0">
+    <div style="background:#fff;border:1px solid var(--abd);border-radius:12px;padding:12px 14px">
+      <label style="font-size:.83rem;font-weight:700;color:var(--aa);display:block;margin-bottom:6px">Was ist Schulsozialarbeit für Sie?</label>
+      <textarea id="vw1" placeholder="Meine erste Definition ..."></textarea>
+    </div>
+    <div style="background:#fff;border:1px solid var(--abd);border-radius:12px;padding:12px 14px">
+      <label style="font-size:.83rem;font-weight:700;color:var(--aa);display:block;margin-bottom:6px">Was unterscheidet SSA von der Lehrkraft?</label>
+      <textarea id="vw2" placeholder="Mein bisheriger Eindruck ..."></textarea>
+    </div>
+    <div style="background:#fff;border:1px solid var(--abd);border-radius:12px;padding:12px 14px">
+      <label style="font-size:.83rem;font-weight:700;color:var(--aa);display:block;margin-bottom:6px">Welche Erwartungen haben Lehrkräfte Ihrer Meinung nach an SSA?</label>
+      <textarea id="vw3" placeholder="Meine Vermutung ..."></textarea>
+    </div>
+    <div style="background:#fff;border:1px solid var(--abd);border-radius:12px;padding:12px 14px">
+      <label style="font-size:.83rem;font-weight:700;color:var(--aa);display:block;margin-bottom:6px">Was verstehen Sie unter Schweigepflicht in der Schule?</label>
+      <textarea id="vw4" placeholder="Meine Vorstellung ..."></textarea>
+    </div>
+  </div>
+  <div class="toolbar">
+    <button class="btn sec done" data-key="vorwissen">Vorwissen festhalten</button>
+    <span class="saved" id="hint-vorwissen">Gespeichert</span>
+  </div>
+</div>
+</section>
+
+<section class="T" id="audio">
+<div class="sh"><h2>5. Einstieg: Audio-Überblick</h2><div class="sub">3–5 Minuten, empfohlen vor dem Lesen</div></div>
+<div class="sb">
+  <p style="font-size:.9rem;color:var(--muted);margin-bottom:10px">Hören Sie sich den Podcast-Einstieg an, bevor Sie mit den Theorieabschnitten beginnen. Die Audiodatei gibt einen kompakten Überblick über die zentralen Fragen dieses Moduls.</p>
+  <audio controls preload="metadata" style="width:100%;border-radius:10px;margin-bottom:6px">
+    <source src="audio_band1_modul1.m4a" type="audio/mp4">
+    Ihr Browser unterstützt kein Audio. Bitte öffnen Sie die Datei <em>audio_band1_modul1.m4a</em> direkt.
+  </audio>
+  <p style="font-size:.82rem;color:var(--muted)">„Schulsozialarbeit ist kein Reparaturservice für Schulen", NotebookLM Audio-Überblick, Band 1 Modul 1</p>
+  <details style="margin-top:10px;font-size:.9rem"><summary style="cursor:pointer;color:var(--ta);font-weight:700">Kurzfassung lesen, falls die Audiodatei nicht verfügbar ist</summary><div class="box" style="margin-top:8px">Schulsozialarbeit ist ein eigenständiges sozialpädagogisches Angebot am Ort Schule. Sie unterstützt junge Menschen, klärt Aufträge transparent, schützt Vertraulichkeit und kooperiert mit Schule, Jugendhilfe und Eltern, ohne zur Disziplinarinstanz oder Ersatzlehrkraft zu werden.</div></details>
+</div>
+</section>
+
+<section class="A" id="audiofragen">
+<div class="sh"><h2>6. Kritische Fragen zum Audio-Überblick</h2><div class="sub">Freitextreflexion nach dem Hören</div></div>
+<div class="sb">
+  <p>Bearbeiten Sie die Fragen direkt nach dem Audio. Es geht nicht um eine Nacherzählung, sondern um eine kritische Einordnung: Welche Aussagen tragen fachlich, wo entstehen offene Fragen oder mögliche Missverständnisse?</p>
+  <div class="box amber"><b>Arbeitsauftrag</b>Formulieren Sie kurze, eigenständige Antworten. Gute Antworten beziehen sich auf konkrete Aussagen aus dem Audio und verbinden diese mit Auftrag, Rolle, Grenzen und Kooperation der Schulsozialarbeit.</div>
+
+  <div class="task" data-task="audiofragen-task">
+    <h3>Freitextfragen zum Audio</h3>
+    <div style="display:grid;gap:12px;margin-top:10px">
+      <div>
+        <label style="font-size:.83rem;font-weight:700;color:var(--aa);display:block;margin-bottom:6px">1. Welche zentrale Aussage des Audio-Überblicks ist für Sie besonders wichtig? Begründen Sie kurz.</label>
+        <textarea id="audiofrage1" placeholder="Meine Antwort ..."></textarea>
+        <details style="margin-top:4px;font-size:.8rem"><summary style="cursor:pointer;color:var(--muted);user-select:none">Orientierungshinweis einblenden</summary><div style="background:var(--tbg);border:1px solid var(--tbd);border-radius:8px;padding:8px 12px;margin-top:4px;color:var(--ink)">Denken Sie an konkrete Formulierungen aus dem Audio: Worum geht es beim Auftrag der SSA? Was unterscheidet sie von Beratung oder Therapie?</div></details>
+      </div>
+      <div>
+        <label style="font-size:.83rem;font-weight:700;color:var(--aa);display:block;margin-bottom:6px">2. Wo beschreibt das Audio Schulsozialarbeit überzeugend als eigenständige Profession und nicht nur als Hilfe für Schule?</label>
+        <textarea id="audiofrage2" placeholder="Meine Antwort ..."></textarea>
+        <details style="margin-top:4px;font-size:.8rem"><summary style="cursor:pointer;color:var(--muted);user-select:none">Orientierungshinweis einblenden</summary><div style="background:var(--tbg);border:1px solid var(--tbd);border-radius:8px;padding:8px 12px;margin-top:4px;color:var(--ink)">Achten Sie auf Begriffe wie Freiwilligkeit, Parteilichkeit für Schülerinnen und Schüler, und Unabhängigkeit von der Schulleitung.</div></details>
+      </div>
+      <div>
+        <label style="font-size:.83rem;font-weight:700;color:var(--aa);display:block;margin-bottom:6px">3. Welche Erwartung an Schulsozialarbeit könnte im schulischen Alltag problematisch werden?</label>
+        <textarea id="audiofrage3" placeholder="Meine Antwort ..."></textarea>
+        <details style="margin-top:4px;font-size:.8rem"><summary style="cursor:pointer;color:var(--muted);user-select:none">Orientierungshinweis einblenden</summary><div style="background:var(--tbg);border:1px solid var(--tbd);border-radius:8px;padding:8px 12px;margin-top:4px;color:var(--ink)">Typische Konfliktfelder: Lehrkräfte erwarten Rückmeldungen über Beratungsgespräche, Eltern fordern Einfluss, Schulleitung erwartet Disziplinierungshilfe.</div></details>
+      </div>
+      <div>
+        <label style="font-size:.83rem;font-weight:700;color:var(--aa);display:block;margin-bottom:6px">4. Der Titel lautet: „Schulsozialarbeit ist kein Reparaturservice für Schulen.“ Was bedeutet dieser Satz konkret für die Praxis?</label>
+        <textarea id="audiofrage4" placeholder="Meine Antwort ..."></textarea>
+        <details style="margin-top:4px;font-size:.8rem"><summary style="cursor:pointer;color:var(--muted);user-select:none">Orientierungshinweis einblenden</summary><div style="background:var(--tbg);border:1px solid var(--tbd);border-radius:8px;padding:8px 12px;margin-top:4px;color:var(--ink)">Überlegen Sie: Was sind die Konsequenzen, wenn SSA als "Reparaturservice" wahrgenommen wird — für die Professionalität und für die Klienten?</div></details>
+      </div>
+      <div>
+        <label style="font-size:.83rem;font-weight:700;color:var(--aa);display:block;margin-bottom:6px">5. Welche Frage würden Sie nach dem Audio einer erfahrenen Fachkraft der Schulsozialarbeit stellen?</label>
+        <textarea id="audiofrage5" placeholder="Meine Antwort ..."></textarea>
+        <details style="margin-top:4px;font-size:.8rem"><summary style="cursor:pointer;color:var(--muted);user-select:none">Orientierungshinweis einblenden</summary><div style="background:var(--tbg);border:1px solid var(--tbd);border-radius:8px;padding:8px 12px;margin-top:4px;color:var(--ink)">Gute Fragen entstehen aus Unklarheiten: Was ist im Audio nicht erklärt worden, was Sie in der Praxis brauchen?</div></details>
+      </div>
+    </div>
+    <div class="toolbar">
+      <button class="btn sec done" data-key="audiofragen">Audiofragen markieren</button>
+      <span class="saved" id="hint-audiofragen">Gespeichert</span>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="T" id="definition">
+<div class="sh"><h2>7. Definition und Auftrag</h2><div class="sub">Theoretische Grundlage I</div></div>
+<div class="sb">
+  <div class="def-block">
+    <div class="def-label">Definition</div>
+    <p>Schulsozialarbeit ist ein sozialpädagogisches Angebot der Jugendhilfe, das dauerhaft und institutionell am Lernort Schule verankert ist. Sie richtet sich an Kinder und Jugendliche, unterstützt deren individuelle Entwicklung, fördert soziale Kompetenzen und schafft Bedingungen für gleichberechtigte gesellschaftliche Teilhabe.</p>
+  </div>
+  <p>Schulsozialarbeit ist damit kein schulisches, sondern ein jugendhilfliches Angebot, auch wenn sie räumlich und organisatorisch in die Schule eingebettet ist. Diese institutionelle Doppelverankerung ist konstitutiv für das Arbeitsfeld und zugleich Quelle typischer Rollenkonflikte.</p>
+  <div class="cards">
+    <div class="card"><strong>Individuelle Förderung</strong><p>Schulsozialarbeit unterstützt Schülerinnen und Schüler in ihrer persönlichen Entwicklung, bei sozialen Schwierigkeiten und in Krisensituationen, unabhängig von schulischen Leistungserwartungen.</p></div>
+    <div class="card"><strong>Prävention</strong><p>Sie arbeitet vorbeugend: Soziale Kompetenzen werden gestärkt, bevor Krisen entstehen. Ziel ist eine Schulkultur, in der alle Kinder gut lernen können.</p></div>
+    <div class="card"><strong>Systemische Vernetzung</strong><p>Schulsozialarbeit verbindet Schule, Jugendhilfe, Beratungsstellen, Familien und Sozialraum. Diese Vernetzung ist Kern des Auftrags, und Quelle von Chancen wie von Konflikten.</p></div>
+  </div>
+  <div class="box green"><b>Merksatz</b>Schulsozialarbeit ist professionelle sozialpädagogische Arbeit am Ort Schule. Sie kooperiert mit der Schule, ist ihr aber fachlich nicht untergeordnet.</div>
+  <div class="def-block">
+    <div class="def-label">Wissenschaftliche Einordnung</div>
+    <p>Der hier verwendete Arbeitsbegriff verbindet drei Perspektiven: Schulsozialarbeit als Angebot der Kinder- und Jugendhilfe, Schulsozialarbeit als eigenständige sozialpädagogische Profession am Ort Schule und Schulsozialarbeit als Kooperationsfeld zwischen Schule, Familie, Jugendhilfe und Sozialraum. Diese Mehrfachverortung erklärt, warum Rollenklärung und Auftragsklärung nicht Zusatzthemen, sondern Kern professionellen Handelns sind.</p>
+    <p style="font-size:.88rem;color:var(--muted);margin-top:8px"><b>Zum Weiterdenken:</b> Vergleichen Sie diese Definition mit Speck, Deinet und den aktuellen rechtlichen Grundlagen nach § 13a SGB VIII.</p>
+  </div>
+</div>
+</section>
+
+<section class="T" id="rechtsgrundlagen">
+<div class="sh"><h2>8. Rechtsgrundlagen in Niedersachsen</h2><div class="sub">Theoretische Grundlage II, mit Lückentext-Aufgabe</div></div>
+<div class="sb">
+  <p>Schulsozialarbeit in Niedersachsen bewegt sich in einem Rechtsrahmen aus Bundesrecht (SGB VIII), Landesrecht (NSchG) und ministeriellen Erlassen.</p>
+
+  <h3 style="margin-top:16px;color:var(--ta)">Bundesrecht: SGB VIII</h3>
+  <table>
+    <thead><tr><th>Norm</th><th>Inhalt</th><th>Bedeutung in Niedersachsen</th></tr></thead>
+    <tbody>
+      <tr><td><b>§ 13a SGB VIII</b></td><td>Schulsozialarbeit: sozialpädagogische Angebote am Ort Schule</td><td>Zentrale Bundesrechtsgrundlage für Schulsozialarbeit; Zusammenarbeit mit der Schule ist ausdrücklich angelegt</td></tr>
+      <tr><td><b>§ 13 SGB VIII</b></td><td>Jugendsozialarbeit: Angebote für sozial benachteiligte junge Menschen</td><td>Ergänzende Bezugsnorm, besonders bei sozialer Benachteiligung und Übergängen</td></tr>
+      <tr><td><b>§ 81 SGB VIII</b></td><td>Zusammenarbeit Jugendhilfe und Schule</td><td>Gesetzliche Kooperationspflicht, Grundlage für Kooperationsvereinbarungen</td></tr>
+      <tr><td><b>§ 8a SGB VIII</b></td><td>Schutzauftrag bei Kindeswohlgefährdung</td><td>Konkretisiert durch Nds. AG SGB VIII und einrichtungsinterne Schutzkonzepte</td></tr>
+      <tr><td><b>§ 203 StGB</b></td><td>Schweigepflicht</td><td>Gilt auch für Schulsozialarbeit; Weitergabe nur mit Einwilligung oder gesetzl. Grundlage</td></tr>
+    </tbody>
+  </table>
+
+  <h3 style="margin-top:16px;color:var(--ta)">Landesrecht und Erlasse</h3>
+  <table>
+    <thead><tr><th>Norm / Erlass</th><th>Regelungsinhalt</th><th>Praxisbedeutung</th></tr></thead>
+    <tbody>
+      <tr><td><b>§ 25 NSchG</b></td><td>Zusammenarbeit zwischen Schulen sowie mit Trägern der Jugendhilfe</td><td>Rechtsrahmen für Kooperation und abgestimmtes Handeln im schulischen Kontext</td></tr>
+      <tr><td><b>§ 54 NSchG</b></td><td>Erziehungsauftrag, soziale Kompetenzen</td><td>SSA unterstützt diesen Auftrag aus jugendhilflicher Perspektive</td></tr>
+      <tr><td><b>Niedersächsischer Erlass „Soziale Arbeit in schulischer Verantwortung“ und ergänzende Kooperationsrahmen</b></td><td>Fachlicher Orientierungsrahmen für Soziale Arbeit in schulischer Verantwortung</td><td>Konkrete Zuständigkeiten, Weisungswege, Datenschutz und Kooperation sind je nach Beschäftigungsmodell, Dienstweg und Kooperationsvereinbarung zu klären</td></tr>
+    </tbody>
+  </table>
+
+  <div class="box amber" style="margin-top:14px"><b>Lückentext-Aufgabe</b>Füllen Sie die Lücken aus dem Gedächtnis aus und klicken Sie anschließend auf „Prüfen“.</div>
+  <div class="luecke-para">
+    Die zentrale Bundesrechtsgrundlage für Schulsozialarbeit ist
+    <input class="luecke" id="l1" data-ans="§ 13a SGB VIII" placeholder="§ ?"> .
+    Die Pflicht zur Zusammenarbeit von Jugendhilfe und Schule regelt
+    <input class="luecke" id="l2" data-ans="§ 81 SGB VIII" placeholder="§ ?"> .
+    In Niedersachsen verpflichtet
+    <input class="luecke" id="l3" data-ans="§ 25 NSchG" placeholder="§ NSchG ?">
+    die Schulen zur aktiven Kooperation mit der Jugendhilfe.
+    Schulsozialarbeiterinnen und Schulsozialarbeiter unterliegen der
+    <input class="luecke" id="l4" data-ans="Schweigepflicht" placeholder="???">
+    nach § 203 StGB.
+    Im Trägermodell werden dienstliche und fachliche Abstimmungsfragen zunächst mit dem
+    <input class="luecke" id="l5" data-ans="Träger" placeholder="???">
+    geklärt, nicht unmittelbar über die Schulleitung.
+  </div>
+  <div class="toolbar">
+    <button class="btn sec" onclick="checkLuecken()">Prüfen</button>
+    <button class="btn sec" onclick="resetLuecken()">Zurücksetzen</button>
+    <button class="btn sec done" data-key="luecken">Aufgabe markieren</button>
+    <span class="saved" id="hint-luecken">Gespeichert</span>
+  </div>
+  <div id="luecken-fb" style="display:none;margin-top:10px;font-size:.88rem"></div>
+
+  <h3 style="margin-top:18px;color:var(--ta)">Datenschutz im schulischen Kontext (DSGVO)</h3>
+  <p style="margin-top:8px;font-size:.93rem">Seit Inkrafttreten der DSGVO (2018) gelten für die Schulsozialarbeit in Niedersachsen besondere Anforderungen im Umgang mit personenbezogenen Daten.</p>
+  <table>
+    <thead><tr><th>Grundsatz</th><th>Bedeutung für die Praxis</th></tr></thead>
+    <tbody>
+      <tr><td><b>Zweckbindung</b></td><td>Daten aus Beratungsgesprächen dürfen nicht für andere Zwecke (z. B. schulische Berichterstattung) genutzt werden.</td></tr>
+      <tr><td><b>Datensparsamkeit</b></td><td>Es werden nur die Daten erhoben, die für die sozialpädagogische Arbeit notwendig sind.</td></tr>
+      <tr><td><b>Einwilligung</b></td><td>Weitergabe personenbezogener Daten an Lehrkräfte oder Eltern erfordert informierte, freiwillige Einwilligung.</td></tr>
+      <tr><td><b>Dokumentation</b></td><td>Falldokumentationen müssen sicher aufbewahrt und vor unbefugtem Zugriff geschützt werden, auch innerhalb der Schule.</td></tr>
+      <tr><td><b>NI: Aufsicht</b></td><td>Landesschulbehörde für Schulen; im Trägermodell zusätzlich die Landesdatenschutzbehörde Niedersachsen.</td></tr>
+    </tbody>
+  </table>
+  <div class="box red" style="margin-top:10px"><b>Praxishinweis</b>Klären Sie zu Beginn Ihrer Tätigkeit: Wo liegen Ihre Falldokumentationen? Wer hat Zugriff? Sind Ihre Aufzeichnungen vor dem Einblick durch Schulleitung und Lehrkräfte geschützt? Diese Fragen sind Teil der Rollenklärung, nicht nur des Datenschutzes.</div>
+  <div class="box amber" style="margin-top:12px"><b>Vertiefung</b>Nds. AG SGB VIII, aktuelle Erlasse, Kooperationsvereinbarungen und vertiefter Datenschutz werden in Band 2 behandelt.</div>
+</div>
+</section>
+
+<section class="T" id="rolle">
+<div class="sh"><h2>9. Die professionelle Rolle</h2><div class="sub">Theoretische Grundlage III</div></div>
+<div class="sb">
+  <p>Die Rolle der Schulsozialarbeit ist strukturell zwischen zwei institutionellen Logiken angesiedelt: der Schule als Bildungseinrichtung einerseits und der Jugendhilfe als sozialstaatlichem Hilfesystem andererseits.</p>
+  <div class="box"><b>Doppelmandat</b>Schulsozialarbeit verpflichtet sich sowohl gegenüber der Institution Schule (Kooperationsauftrag) als auch gegenüber den Schülerinnen und Schülern (Unterstützungsauftrag). Beide Mandate müssen transparent und fachlich begründet ausbalanciert werden.</div>
+  <p style="margin-top:14px">Aus dieser Positionierung ergibt sich die professionelle Grundhaltung: Schulsozialarbeit arbeitet <em>für</em> die jungen Menschen, <em>mit</em> der Schule, aber nicht als verlängerter Arm schulischer Disziplinierung.</p>
+
+  <p style="margin-top:16px;font-weight:600;color:var(--ta)">Besonderheit in Niedersachsen: Zwei Beschäftigungsmodelle</p>
+  <p style="font-size:.9rem;color:var(--muted);margin-bottom:4px">Klicken Sie auf eine Karte, um die Details einzublenden.</p>
+  <div class="flipcard-row">
+    <div class="flipcard" onclick="this.classList.toggle('flipped')">
+      <div class="flipcard-inner">
+        <div class="flipcard-front">
+          <div class="fc-label">Modell 1</div>
+          <div class="fc-title">Trägermodell<br><small style="font-weight:400;font-size:.85rem">(kommunal / freier Träger)</small></div>
+          <div class="fc-hint">Klicken zum Aufdecken</div>
+        </div>
+        <div class="flipcard-back">
+          <div class="fc-back-title">Trägermodell (häufiger Fall)</div>
+          <ul>
+            <li>Anstellung bei kommunalem oder freiem Träger (Landkreis, AWO, Diakonie …)</li>
+            <li>Dienstliche Zuständigkeit und fachliche Steuerung: in der Regel <strong>Träger</strong>, abhängig von Vertrag und Kooperationsvereinbarung</li>
+            <li>Die Schulleitung ist im Trägermodell nicht Arbeitgeberin der Fachkraft; Weisungs- und Abstimmungsfragen werden über Trägerauftrag, Dienstweg und Kooperationsvereinbarung geklärt</li>
+            <li>Grundlage: Kooperationsvereinbarung, Trägerauftrag und § 13a SGB VIII</li>
+            <li>Kooperationsvereinbarung verpflichtend</li>
+          </ul>
+          <div class="fc-warn green">Höhere Rollenautonomie; Schweigepflicht gegenüber Schulleitung klar umsetzbar.</div>
+        </div>
+      </div>
+    </div>
+    <div class="flipcard" onclick="this.classList.toggle('flipped')">
+      <div class="flipcard-inner">
+        <div class="flipcard-front teal">
+          <div class="fc-label">Modell 2</div>
+          <div class="fc-title">Landesmodell<br><small style="font-weight:400;font-size:.85rem">(Anstellung beim Land NI)</small></div>
+          <div class="fc-hint">Klicken zum Aufdecken</div>
+        </div>
+        <div class="flipcard-back">
+          <div class="fc-back-title">Landesmodell (Landesprogramm NI)</div>
+          <ul>
+            <li>Anstellung beim Land Niedersachsen über Landesschulbehörde</li>
+            <li>Dienstliche Vorgesetztenrolle kann bei der <strong>Schulleitung</strong> liegen; fachliche Grenzen bleiben dennoch zu klären</li>
+            <li>Eingesetzt u. a. über sozialindexbasierte Landesmittel</li>
+            <li>Schweigepflicht gilt weiterhin, Rollenautonomie strukturell stärker gefährdet</li>
+          </ul>
+          <div class="fc-warn amber">Dienstliche Zuständigkeit und fachliche Eigenständigkeit müssen aktiv geklärt und in Rollenabsprachen abgesichert werden.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="box"><b>Konsequenz für Ihre Praxis</b>Klären Sie zu Beginn: In welchem Modell arbeiten Sie? Die Antwort beeinflusst Dienstweg, Weisungsfragen, Kooperationsabsprachen und die praktische Umsetzung der Schweigepflicht.</div>
+
+  <table style="margin-top:16px">
+    <thead><tr><th>Schulsozialarbeit ist …</th><th>Schulsozialarbeit ist nicht …</th></tr></thead>
+    <tbody>
+      <tr><td>sozialpädagogische Fachkraft mit eigenem Auftrag</td><td>Hilfslehrkraft oder Vertretungsreserve</td></tr>
+      <tr><td>Ansprechperson für persönliche und soziale Anliegen</td><td>Disziplinarinstanz der Schule</td></tr>
+      <tr><td>Brücke zwischen Schule, Familie und Jugendhilfe</td><td>Meldestelle für Lehrkräfte über Schülerverhalten</td></tr>
+      <tr><td>vertrauliche Beratungsstelle im Schulkontext</td><td>therapeutische Einrichtung</td></tr>
+    </tbody>
+  </table>
+</div>
+</section>
+
+<section class="T" id="prinzipien">
+<div class="sh"><h2>10. Grundprinzipien der Schulsozialarbeit</h2><div class="sub">Theoretische Grundlage IV, mit Sortieraufgabe</div></div>
+<div class="sb">
+  <p>Sechs Prinzipien rahmen die Arbeit der Schulsozialarbeit ein. Lesen Sie zunächst alle Prinzipien, dann bringen Sie sie per Drag &amp; Drop in Ihre persönliche Reihenfolge nach Relevanz für Ihren Arbeitsalltag.</p>
+  <div class="sort-area" id="sort-list">
+    <div class="sort-item" draggable="true"><span class="sort-handle">⠿</span><div><b>Freiwilligkeit</b>Niemand kann zur Inanspruchnahme verpflichtet werden. Freiwilligkeit entfaltet sich im Gespräch, nicht als Vorbedingung.</div></div>
+    <div class="sort-item" draggable="true"><span class="sort-handle">⠿</span><div><b>Vertraulichkeit</b>Beratungsinhalte unterliegen der Schweigepflicht. Weitergabe erfordert informiertes Einverständnis oder eine gesetzliche Grundlage.</div></div>
+    <div class="sort-item" draggable="true"><span class="sort-handle">⠿</span><div><b>Parteilichkeit</b>Schulsozialarbeit steht auf der Seite der Kinder und Jugendlichen. Deren Interessen haben Vorrang vor institutionellen Erwartungen.</div></div>
+    <div class="sort-item" draggable="true"><span class="sort-handle">⠿</span><div><b>Lebensweltorientierung</b>Ausgangspunkt ist die Lebenssituation des jungen Menschen, nicht die Problemdefinition der Schule.</div></div>
+    <div class="sort-item" draggable="true"><span class="sort-handle">⠿</span><div><b>Niedrigschwelligkeit</b>Das Angebot ist für alle zugänglich, unabhängig von Herkunft, Leistung oder sozialem Status.</div></div>
+    <div class="sort-item" draggable="true"><span class="sort-handle">⠿</span><div><b>Kooperation</b>Schulsozialarbeit arbeitet vernetzt und multiprofessionell, ohne dabei fachliche Eigenständigkeit aufzugeben.</div></div>
+  </div>
+  <div class="toolbar">
+    <button class="btn sec done" data-key="sort">Reihenfolge bestätigen</button>
+    <span class="saved" id="hint-sort">Gespeichert</span>
+  </div>
+  <div class="box amber" style="margin-top:10px"><b>Reflexionsfrage</b>Welches Prinzip fällt Ihnen in der Praxis am schwersten umzusetzen, und warum?</div>
+  <textarea id="sort-reflex" placeholder="Meine Überlegung ..." style="margin-top:8px"></textarea>
+</div>
+</section>
+
+<section class="T" id="abgrenzung">
+<div class="sh"><h2>11. Abgrenzung zu anderen Professionen</h2><div class="sub">Theoretische Grundlage V, mit Zuordnungsaufgabe</div></div>
+<div class="sb">
+  <p>Im schulischen Alltag begegnen Ihnen viele Professionen. Rollenklarheit setzt voraus, die eigene Funktion klar abgrenzen zu können.</p>
+  <table>
+    <thead><tr><th>Profession</th><th>Primärer Auftrag</th><th>Abgrenzung zur Schulsozialarbeit</th></tr></thead>
+    <tbody>
+      <tr><td><b>Lehrkraft</b></td><td>Unterricht, Erziehung, Leistungsbewertung</td><td>SSA bewertet nicht, selektiert nicht, unterrichtet nicht</td></tr>
+      <tr><td><b>Schulpsychologie</b></td><td>Psychologische Diagnostik, Lernberatung</td><td>SSA diagnostiziert nicht; sie berät sozialpädagogisch und vermittelt</td></tr>
+      <tr><td><b>Schulleitung</b></td><td>Organisation, Aufsicht, Disziplin</td><td>SSA übt keine Disziplinargewalt aus</td></tr>
+      <tr><td><b>ASD / Jugendamt</b></td><td>Hoheitliche Aufgaben, Hilfen zur Erziehung (NI: § 36 SGB VIII)</td><td>SSA hat keine hoheitlichen Befugnisse; sie vermittelt und kooperiert</td></tr>
+    </tbody>
+  </table>
+  <div class="box green" style="margin-top:12px"><b>Fazit</b>Rollenklarheit ist Voraussetzung für wirksame Kooperation, keine Abgrenzungsstrategie gegenüber Kolleginnen und Kollegen.</div>
+
+  <p style="margin-top:16px;font-weight:600">Zuordnungsaufgabe: Aussagen einordnen</p>
+  <p style="font-size:.9rem;color:var(--muted);margin-bottom:4px">Ziehen Sie die Aussagen in die richtige Spalte. Falls Ziehen auf einem Touchscreen nicht zuverlässig funktioniert, tippen Sie zuerst auf eine Aussage und danach auf die passende Spalte.</p>
+  <div class="dnd-abgr">
+    <div class="dnd-pool">
+      <h4>Aussagen (ziehen)</h4>
+      <div class="dnd-chips" id="abgr-pool">
+        <div class="chip" draggable="true" data-id="a1">Bewertet Schulleistungen</div>
+        <div class="chip" draggable="true" data-id="a2">Berät vertraulich</div>
+        <div class="chip" draggable="true" data-id="a3">Erteilt Strafarbeiten</div>
+        <div class="chip" draggable="true" data-id="a4">Vernetzt mit Jugendhilfe</div>
+        <div class="chip" draggable="true" data-id="a5">Diagnostiziert Lernstörungen</div>
+        <div class="chip" draggable="true" data-id="a6">Steht auf der Seite der Kinder</div>
+        <div class="chip" draggable="true" data-id="a7">entscheidet hoheitlich über Maßnahmen im Kinderschutz</div>
+      </div>
+    </div>
+    <div style="display:grid;gap:10px">
+      <div class="drop-zone" data-zone="ja" id="abgr-ja">
+        <h4>Schulsozialarbeit ist zuständig</h4>
+        <div class="dnd-chips"></div>
+      </div>
+      <div class="drop-zone" data-zone="nein" id="abgr-nein">
+        <h4>Schulsozialarbeit ist nicht zuständig</h4>
+        <div class="dnd-chips"></div>
+      </div>
+    </div>
+  </div>
+  <div class="toolbar">
+    <button class="btn sec" onclick="checkAbgr()">Prüfen</button>
+    <button class="btn sec" onclick="resetAbgr()">Zurücksetzen</button>
+    <button class="btn sec done" data-key="abgr">Aufgabe markieren</button>
+    <span class="saved" id="hint-abgr">Gespeichert</span>
+  </div>
+  <div class="dnd-fb" id="abgr-fb"></div>
+</div>
+</section>
+
+<section class="T" id="wissenschaft">
+<div class="sh"><h2>12. Wissenschaftsbezug: Warum Rolle und Auftrag zentral sind</h2><div class="sub">Kurze theoretische Rahmung für Studium und Weiterbildung</div></div>
+<div class="sb">
+  <p>Für den hochschulischen Einsatz ist wichtig, dass Schulsozialarbeit nicht nur als praktische Hilfeleistung verstanden wird. Das Arbeitsfeld lässt sich wissenschaftlich als Schnittstelle von Jugendhilfe, Schule, Lebenswelt, Sozialraum und professioneller Ethik beschreiben.</p>
+  <div class="prinzipien">
+    <div class="prinzip"><b>Lebensweltorientierung</b><p>Nach lebensweltorientierten Ansätzen beginnt professionelles Handeln nicht bei der schulischen Problemdefinition, sondern bei der subjektiven Lebenssituation des jungen Menschen.</p></div>
+    <div class="prinzip"><b>Sozialraumorientierung</b><p>Schulsozialarbeit betrachtet nicht nur Einzelfälle, sondern Zugänge, Orte, Ressourcen, Ausschlüsse und Netzwerke im Umfeld der Schule.</p></div>
+    <div class="prinzip"><b>Professionelle Mandate</b><p>Schulsozialarbeit arbeitet im Spannungsfeld zwischen Hilfe, Schutz, Kooperation und institutionellen Erwartungen. Dieses Spannungsfeld muss reflektiert, nicht verdeckt werden.</p></div>
+    <div class="prinzip"><b>Berufsethik</b><p>Vertraulichkeit, Beteiligung, Achtung der Würde und Schutz junger Menschen sind keine Zusatzwerte, sondern Kriterien professioneller Qualität.</p></div>
+  </div>
+  <div class="box amber"><b>Arbeitsauftrag für Seminare</b>Diskutieren Sie: Welche der vier Perspektiven wird im Alltag Ihrer Schule am stärksten sichtbar, und welche wird am ehesten übersehen?</div>
+</div>
+</section>
+
+<!-- ===== ANWENDUNG ===== -->
+
+<section class="A" id="fall">
+<div class="sh"><h2>13. Einstiegsfall: Verzweigtes Szenario</h2><div class="sub">Treffen Sie Entscheidungen und prüfen Sie die fachlichen Konsequenzen</div></div>
+<div class="sb">
+<p style="font-size:.93rem;margin-bottom:12px"><b>Leitfrage:</b> Prüfen Sie im folgenden Szenario nicht zuerst, welche Person „recht hat“, sondern welche Aufträge, Interessen und Grenzen gleichzeitig wirksam sind.</p>
+
+<div class="branch" id="branch">
+  <div class="branch-progress">
+    <span>Szenario-Fortschritt:</span>
+    <div class="branch-step cur" id="bs0"></div>
+    <div class="branch-step" id="bs1"></div>
+    <div class="branch-step" id="bs2"></div>
+  </div>
+
+  <!-- SZENE 0 -->
+  <div class="branch-scene active" id="scene0">
+    <div class="branch-situation">
+      <b>Montag, große Pause. Frau Kramer kommt auf Sie zu.</b>
+      „Kannst du dir Ben mal vorknöpfen? Der stört seit Tagen den Unterricht. Ich brauche bis morgen eine Rückmeldung, was mit ihm los ist."
+    </div>
+    <p style="margin-bottom:10px;font-size:.92rem">Was tun Sie jetzt?</p>
+    <div class="branch-choices">
+      <button class="branch-choice" onclick="goScene('1a')">A, Frau Kramers Anliegen vollständig anhören und nachfragen, was sie bisher beobachtet hat.</button>
+      <button class="branch-choice" onclick="goScene('1b')">B, Sofort klarstellen, dass Sie keine Rückmeldung über Gesprächsinhalte geben können.</button>
+      <button class="branch-choice" onclick="goScene('1c')">C, Zusagen und Ben für heute Nachmittag einladen.</button>
+    </div>
+  </div>
+
+  <!-- SZENE 1a -->
+  <div class="branch-scene" id="scene1a">
+    <div class="branch-outcome ok show"><b>Gute Wahl.</b> Sie hören zu und erfahren: Ben sitzt seit einer Woche in Pausen allein, hat im Unterricht geweint und wirkt verändert. Diese Informationen helfen Ihnen, das Gespräch mit Ben vorzubereiten, ohne dass Sie bereits eine Problemdefinition übernehmen.</div>
+    <div class="branch-situation">
+      <b>Frau Kramer fragt am Ende:</b> „Kannst du mir morgen sagen, was Ben erzählt hat?"
+    </div>
+    <div class="branch-choices">
+      <button class="branch-choice" onclick="goScene('2a')">A, „Ich spreche mit Ben darüber, was er möchte, dass ich Ihnen mitteile."</button>
+      <button class="branch-choice" onclick="goScene('2b')">B, „Selbstverständlich, ich halte Sie vollständig auf dem Laufenden."</button>
+    </div>
+  </div>
+
+  <!-- SZENE 1b -->
+  <div class="branch-scene" id="scene1b">
+    <div class="branch-outcome warn show"><b>Fachlich korrekt, aber zu früh.</b> Die Rollengrenze ist wichtig. Aber Frau Kramer hat noch nichts Unzulässiges gefordert, sie hat lediglich um Unterstützung gebeten. Eine sofortige Abwehr wirkt defensiv und erschwert die spätere Kooperation. Besser: zunächst zuhören, dann die Grenze klar und kooperativ formulieren.</div>
+    <div class="branch-situation"><b>Frau Kramer ist irritiert und geht.</b> Ben weiß nicht, dass Sie existieren.</div>
+    <div class="branch-choices">
+      <button class="branch-choice" onclick="goScene('2c')">Frau Kramer später aufsuchen und das Gespräch neu beginnen.</button>
+      <button class="branch-choice" onclick="goScene('2d')">Ben über das Schulsekretariat einladen lassen.</button>
+    </div>
+  </div>
+
+  <!-- SZENE 1c -->
+  <div class="branch-scene" id="scene1c">
+    <div class="branch-outcome bad show"><b>Problemzone.</b> Sie haben zugesagt, ohne die Rahmenbedingungen geklärt zu haben. Ben sitzt bei Ihnen und fragt: „Warum bin ich hier? Hat Frau Kramer Sie geschickt?", Sie stecken in einem Dilemma: Transparenz gefährdet das Vertrauen, Unehrlichkeit gefährdet Ihre Professionalität.</div>
+    <div class="branch-situation"><b>Ben fragt:</b> „Sagen Sie Frau Kramer dann alles, was ich Ihnen erzähle?"</div>
+    <div class="branch-choices">
+      <button class="branch-choice" onclick="goScene('2e')">Transparent antworten: „Das klären wir gemeinsam, ich erzähle nichts weiter, ohne dass Sie es wissen."</button>
+      <button class="branch-choice" onclick="goScene('2f')">Ausweichen: „Das kommt darauf an."</button>
+    </div>
+  </div>
+
+  <!-- SZENE 2a, Endszene gut -->
+  <div class="branch-scene" id="scene2a">
+    <div class="branch-outcome ok show">
+      <b>Professionell.</b> Diese Antwort schützt die Vertraulichkeit gegenüber Ben und ermöglicht gleichzeitig Kooperation. Sie übernehmen keine pauschale Zusage, machen aber deutlich, dass Sie mit Frau Kramer sprechen werden, auf Basis dessen, was Ben freigibt.
+    </div>
+    <p style="margin-top:14px;font-size:.93rem"><b>Ihr nächster Schritt:</b> Ben einladen, Freiwilligkeit und Vertraulichkeit erläutern, gemeinsam klären, was er möchte, dass Frau Kramer erfährt.</p>
+    <div class="box green" style="margin-top:10px"><b>Fazit dieses Durchlaufs</b>Sie haben zugehört, die Grenze kooperativ kommuniziert und Bens Autonomie gewahrt. Das ist professionelle Auftragsklärung.</div>
+    <div class="branch-nav">
+      <button class="btn sec" onclick="resetBranch()">Szenario neu starten</button>
+      <button class="btn sec done" data-key="branch">Szenario markieren</button>
+      <span class="saved" id="hint-branch">Gespeichert</span>
+    </div>
+  </div>
+
+  <!-- SZENE 2b, Endszene schlecht -->
+  <div class="branch-scene" id="scene2b">
+    <div class="branch-outcome bad show">
+      <b>Fehler.</b> Eine pauschale Zusage verletzt die Schweigepflicht (§ 203 StGB) und untergräbt das Vertrauen, das Ben in Sie setzen könnte. Schulsozialarbeit ist keine Informationsquelle für Lehrkräfte.
+    </div>
+    <div class="branch-nav">
+      <button class="btn sec" onclick="resetBranch()">Szenario neu starten</button>
+    </div>
+  </div>
+
+  <!-- SZENE 2c -->
+  <div class="branch-scene" id="scene2c">
+    <div class="branch-outcome ok show"><b>Guter Schritt.</b> Sie holen das Gespräch nach, diesmal mit der richtigen Balance aus Rollenklarheit und Kooperationsbereitschaft. Frau Kramer versteht nun, was Sie leisten können.</div>
+    <div class="branch-nav">
+      <button class="btn sec" onclick="resetBranch()">Szenario neu starten</button>
+      <button class="btn sec done" data-key="branch">Szenario markieren</button>
+      <span class="saved" id="hint-branch2">Gespeichert</span>
+    </div>
+  </div>
+
+  <!-- SZENE 2d -->
+  <div class="branch-scene" id="scene2d">
+    <div class="branch-outcome warn show"><b>Suboptimal.</b> Ben weiß nicht, warum er kommen soll, das gefährdet von Anfang an die Freiwilligkeit und das Vertrauen. Besser: Ben persönlich ansprechen oder eine kurze, ehrliche Einladung formulieren.</div>
+    <div class="branch-nav">
+      <button class="btn sec" onclick="resetBranch()">Szenario neu starten</button>
+    </div>
+  </div>
+
+  <!-- SZENE 2e, Endszene gut -->
+  <div class="branch-scene" id="scene2e">
+    <div class="branch-outcome ok show">
+      <b>Richtig.</b> Trotz des schwierigen Einstiegs retten Sie die Situation durch Transparenz. Ben erfährt, dass er selbst entscheidet, was weitergegeben wird. Das ist die Grundlage für eine tragfähige Beziehung.
+    </div>
+    <div class="branch-nav">
+      <button class="btn sec" onclick="resetBranch()">Szenario neu starten</button>
+      <button class="btn sec done" data-key="branch">Szenario markieren</button>
+      <span class="saved" id="hint-branch3">Gespeichert</span>
+    </div>
+  </div>
+
+  <!-- SZENE 2f, Endszene schlecht -->
+  <div class="branch-scene" id="scene2f">
+    <div class="branch-outcome bad show">
+      <b>Fehler.</b> Ausweichen zerstört das Vertrauen. Ben wird das Gespräch nicht öffnen. „Das kommt darauf an" ist keine fachliche Antwort, es ist Unsicherheit, die Ben spürt.
+    </div>
+    <div class="branch-nav">
+      <button class="btn sec" onclick="resetBranch()">Szenario neu starten</button>
+    </div>
+  </div>
+
+</div><!-- end branch -->
+
+<p style="margin-top:16px;font-size:.9rem;color:var(--muted)">Notieren Sie nach dem Durchlauf: Was hat Sie überrascht?</p>
+<textarea id="fall-text" placeholder="Meine Reflexion zum Szenario ..."></textarea>
+<div class="toolbar">
+  <button class="btn sec done" data-key="fall">Reflexion markieren</button>
+  <span class="saved" id="hint-fall">Gespeichert</span>
+</div>
+</div>
+</section>
+
+<section class="A" id="aufgaben">
+<div class="sh"><h2>13. Interaktive Aufgaben</h2></div>
+<div class="sb">
+
+  <div class="task" data-task="a1">
+    <h3>Aufgabe 1: Kernauftrag bestimmen</h3>
+    <p>Welche Tätigkeit entspricht dem Kernauftrag der Schulsozialarbeit?</p>
+    <div class="choices">
+      <button class="choice" data-correct="false">Eine Lehrkraft vertreten, weil diese erkrankt ist.</button>
+      <button class="choice" data-correct="true">Eine Schülerin in einem sozialen Konflikt beraten und gemeinsam nächste Schritte entwickeln.</button>
+      <button class="choice" data-correct="false">Strafmaßnahmen für störendes Verhalten festlegen.</button>
+    </div>
+    <div class="feedback">Korrekt. Sozialpädagogische Beratung und Begleitung bilden den Kern. Schulsozialarbeit ist weder Unterrichtsersatz noch Sanktionsinstanz.</div>
+    <textarea id="a1-begruendung" placeholder="Begründen Sie Ihre Entscheidung: Welcher Auftrag wird hier fachlich sichtbar?" style="margin-top:10px"></textarea>
+  </div>
+
+  <!-- AUFGABE 2: D&D Rollen -->
+  <div class="task" data-task="a2">
+    <h3>Aufgabe 2: Rollen zuordnen (Drag &amp; Drop)</h3>
+    <p>Ziehen Sie die Aufgaben in die zugehörige Profession. Falls Ziehen auf einem Touchscreen nicht zuverlässig funktioniert, tippen Sie zuerst auf eine Aussage und danach auf die passende Spalte.</p>
+    <div class="dnd-area">
+      <div class="dnd-pool">
+        <h4>Aufgaben (ziehen)</h4>
+        <div class="dnd-chips" id="chip-pool">
+          <div class="chip" draggable="true" data-id="c1">Unterricht planen</div>
+          <div class="chip" draggable="true" data-id="c2">Familiäre Belastung erkunden</div>
+          <div class="chip" draggable="true" data-id="c3">hoheitlich über Kinderschutzmaßnahmen entscheiden (ASD)</div>
+          <div class="chip" draggable="true" data-id="c4">Pausenkonflikt moderieren</div>
+          <div class="chip" draggable="true" data-id="c5">Lernschwäche diagnostizieren</div>
+          <div class="chip" draggable="true" data-id="c6">Kooperationsvereinbarung verhandeln</div>
+          <div class="chip" draggable="true" data-id="c7">Hilfeplan § 36 SGB VIII erstellen</div>
+        </div>
+      </div>
+      <div class="dnd-targets">
+        <div class="drop-zone" data-zone="ssa"><h4>Schulsozialarbeit</h4><div class="dnd-chips"></div></div>
+        <div class="drop-zone" data-zone="lk"><h4>Lehrkraft</h4><div class="dnd-chips"></div></div>
+        <div class="drop-zone" data-zone="asd"><h4>ASD / Jugendamt</h4><div class="dnd-chips"></div></div>
+        <div class="drop-zone" data-zone="schulpsy"><h4>Schulpsychologie</h4><div class="dnd-chips"></div></div>
+      </div>
+    </div>
+    <div class="toolbar">
+      <button class="btn sec" onclick="checkDnD()">Zuordnung prüfen</button>
+      <button class="btn sec" onclick="resetDnD()">Zurücksetzen</button>
+      <button class="btn sec done" data-key="a2">Aufgabe markieren</button>
+      <span class="saved" id="hint-a2">Gespeichert</span>
+    </div>
+    <div class="dnd-fb" id="dnd-fb"></div>
+    <textarea id="a2-text" placeholder="Meine Begründung ..." style="margin-top:10px"></textarea>
+  </div>
+
+  <!-- AUFGABE 3 -->
+  <div class="task" data-task="a3">
+    <h3>Aufgabe 3: Professionelle Reaktion wählen</h3>
+    <p>Frau Kramer sagt: „Sag mir bitte nachher genau, was Ben erzählt hat." Welche Reaktion ist fachlich angemessen?</p>
+    <div class="choices">
+      <button class="choice" data-correct="false">„Selbstverständlich, ich halte Sie vollständig auf dem Laufenden."</button>
+      <button class="choice" data-correct="true">„Ich bespreche mit Ben, was er möchte, dass ich Ihnen mitteile. Für unsere Zusammenarbeit kann ich Ihnen eine Einschätzung zu nächsten Schritten geben."</button>
+      <button class="choice" data-correct="false">„Mit Lehrkräften darf ich grundsätzlich nicht sprechen."</button>
+    </div>
+    <div class="feedback">Korrekt. Diese Antwort wahrt Vertraulichkeit und ermöglicht Kooperation. Schweigepflicht ist kein Kooperationsverbot.</div>
+    <textarea id="a3-begruendung" placeholder="Begründen Sie Ihre Entscheidung: Welche Grenze wird gewahrt, und welche Kooperation bleibt möglich?" style="margin-top:10px"></textarea>
+  </div>
+
+  <!-- AUFGABE 4: ANNOTATION -->
+  <div class="task" data-task="a4">
+    <h3>Aufgabe 4: Grenzen im Text markieren</h3>
+    <p>Klicken Sie auf die Sätze im Falltext, die eine Rollengrenze der Schulsozialarbeit berühren. Markierte Sätze erscheinen grün.</p>
+    <div class="anno-legend">
+      <span><span class="dot" style="background:#fff3d0;border:1px solid var(--amber)"></span> Angeklickt</span>
+      <span><span class="dot" style="background:var(--aal);border:1px solid var(--aa)"></span> Als Rollengrenze markiert (2× klicken)</span>
+    </div>
+    <div class="anno-text" id="anno-text">
+      <span class="anno-sent" onclick="annoClick(this)">Frau Kramer bittet die Schulsozialarbeiterin, Ben „vorzunehmen".</span>
+      <span class="anno-sent" onclick="annoClick(this)"> Sie erwartet eine Rückmeldung bis zum nächsten Tag.</span>
+      <span class="anno-sent" onclick="annoClick(this)"> Die Schulsozialarbeiterin lädt Ben ein.</span>
+      <span class="anno-sent" onclick="annoClick(this)"> Ben erzählt von Problemen zuhause.</span>
+      <span class="anno-sent" onclick="annoClick(this)"> Die Schulsozialarbeiterin notiert alles und gibt den Bericht an Frau Kramer weiter.</span>
+      <span class="anno-sent" onclick="annoClick(this)"> Frau Kramer übermittelt daraufhin eine Klassenarbeit zur Korrektur an die Schulsozialarbeiterin.</span>
+      <span class="anno-sent" onclick="annoClick(this)"> Die Schulsozialarbeiterin erklärt Ben, dass sie nur mit seinem Einverständnis etwas weitergeben wird.</span>
+    </div>
+    <div class="anno-count" id="anno-count">0 Sätze als Rollengrenze markiert</div>
+    <div class="toolbar">
+      <button class="btn sec done" data-key="a4">Aufgabe markieren</button>
+      <span class="saved" id="hint-a4">Gespeichert</span>
+    </div>
+  </div>
+
+</div>
+</section>
+
+<section class="A" id="methodenkoffer">
+<div class="sh"><h2>14. Methodenkoffer</h2><div class="sub">Werkzeuge für Auftragsklärung, Rollenklarheit und Sozialraumanalyse</div></div>
+<div class="sb">
+  <p>Nutzen Sie den Methodenkoffer nicht als Theorieablage, sondern als Arbeitsinstrument. Jedes Werkzeug soll Ihnen helfen, in unübersichtlichen Situationen fachlich sauber zu entscheiden.</p>
+
+  <div class="method-grid">
+    <div class="method-tile"><b>4-Fragen-Schema</b>Klärt Auftrag, Problemdefinition, Erwartungen und nächsten Schritt.</div>
+    <div class="method-tile"><b>Rollenampel</b>Sortiert, was fachlich passt, kritisch ist oder klar abzulehnen bleibt.</div>
+    <div class="method-tile"><b>Sozialraumanalyse</b>Erfasst Ressourcen, Belastungen, Orte, Wege und Netzwerke.</div>
+    <div class="method-tile"><b>Gesprächsnotiz</b>Sichert kurze, datensparsame und professionelle Dokumentation.</div>
+  </div>
+
+  <div class="accordion">
+    <button class="acc-header" onclick="toggleAcc(this)">Werkzeug 1: 4-Fragen-Schema zur Auftragsklärung <em class="acc-icon">▼</em></button>
+    <div class="acc-body"><div class="acc-inner">
+      <div class="must-box">
+        <div class="must-row"><b>1. Wer meldet das Anliegen?</b><br>Hier: Frau Kramer, nicht Ben. Das beeinflusst die gesamte Auftragsklärung.</div>
+        <div class="must-row"><b>2. Wer hat welches Problem?</b><br>Frau Kramers Problem: Unterrichtsstörung. Bens mögliches Problem kann ein ganz anderes sein.</div>
+        <div class="must-row"><b>3. Was wird von mir erwartet?</b><br>Erwartet wird Rückmeldung. Fachlich erlaubt ist aber nur eine abgestimmte Rückmeldung über nächste Schritte.</div>
+        <div class="must-row"><b>4. Was ist mein fachlich vertretbarer nächster Schritt?</b><br>Ben transparent einladen, Freiwilligkeit erläutern, Vertraulichkeit klären, Rückmeldung mit Ben abstimmen.</div>
+      </div>
+      <textarea id="schema-text" placeholder="Wenden Sie das 4-Fragen-Schema auf den Fall Ben an. Nennen Sie alle vier Fragen und Ihre fachliche Schlussfolgerung."></textarea>
+      <div class="toolbar">
+        <button class="btn sec done" data-key="schema">Aufgabe markieren</button>
+        <span class="saved" id="hint-schema">Gespeichert</span>
+      </div>
+    </div></div>
+  </div>
+
+  <div class="accordion">
+    <button class="acc-header" onclick="toggleAcc(this)">Werkzeug 2: Rollenampel <em class="acc-icon">▼</em></button>
+    <div class="acc-body"><div class="acc-inner">
+      <p style="font-size:.9rem;margin-bottom:8px">Ordnen Sie Erwartungen an Schulsozialarbeit fachlich ein.</p>
+      <table>
+        <thead><tr><th>Ampel</th><th>Bedeutung</th><th>Beispiel aus dem Fall</th></tr></thead>
+        <tbody>
+          <tr><td><b style="color:var(--green)">Grün</b></td><td>fachlich passend</td><td>Ben vertraulich beraten, nächste Schritte gemeinsam klären</td></tr>
+          <tr><td><b style="color:var(--amber)">Gelb</b></td><td>nur mit Klärung möglich</td><td>Rückmeldung an Frau Kramer über vereinbarte nächste Schritte</td></tr>
+          <tr><td><b style="color:var(--red)">Rot</b></td><td>fachlich abzulehnen</td><td>Gesprächsinhalte ohne Einwilligung weitergeben</td></tr>
+        </tbody>
+      </table>
+      <textarea id="rollenampel-text" placeholder="Wenden Sie die Rollenampel auf eine konkrete Erwartung an Ihrer Schule oder auf den Fall Ben an."></textarea>
+    </div></div>
+  </div>
+
+  <div class="accordion">
+    <button class="acc-header" onclick="toggleAcc(this)">Werkzeug 3: Sozialraumanalyse, sechs Analyseboards <em class="acc-icon">▼</em></button>
+    <div class="acc-body"><div class="acc-inner">
+      <p>Die Sozialraumanalyse verhindert, dass ein Fall vorschnell als individuelles Problem eines Kindes gedeutet wird. Prüfen Sie Umfeld, Ressourcen, Belastungen und Beziehungen.</p>
+
+      <div class="analysis-board">
+        <h4>Board A: Akteurskarte</h4>
+        <p>Welche Personen, Gruppen und Institutionen sind für Ben relevant?</p>
+        <textarea id="sa-akteure" placeholder="Schule, Familie, Peers, Vereine, Beratungsstellen, Jugendhilfe ..."></textarea>
+        <div class="toolbar"><button class="btn sec" onclick="showLoesung(this)">Musterlösung</button></div>
+        <div class="loesung-box">Mögliche Akteure: Ben, Frau Kramer, Klassenleitung, Schulsozialarbeit, Sorgeberechtigte, Peergroup, Ganztag, ASD/Jugendamt bei konkretem Anlass, ggf. Beratungsstelle oder Verein.</div>
+      </div>
+
+      <div class="analysis-board">
+        <h4>Board B: Ressourcenkarte</h4>
+        <p>Welche vorhandenen Stärken, Beziehungen und Orte können stabilisieren?</p>
+        <textarea id="sa-ressourcen" placeholder="Vertrauenspersonen, Interessen, sichere Orte, Freundschaften, Hobbys ..."></textarea>
+        <div class="toolbar"><button class="btn sec" onclick="showLoesung(this)">Musterlösung</button></div>
+        <div class="loesung-box">Mögliche Ressourcen: vertraute Lehrkraft, ein stabiler Pausenort, Freundschaften, Sportverein, Interesse an Technik oder Spiel, positive Beziehung zur Schulsozialarbeit, verlässliche Tagesstruktur.</div>
+      </div>
+
+      <div class="analysis-board">
+        <h4>Board C: Belastungskarte</h4>
+        <p>Welche Belastungen könnten Verhalten erklären, ohne vorschnell zu diagnostizieren?</p>
+        <textarea id="sa-belastungen" placeholder="Konflikte, Überforderung, Trennung, Armut, Ausschluss, Gewalt, Leistungsdruck ..."></textarea>
+        <div class="toolbar"><button class="btn sec" onclick="showLoesung(this)">Musterlösung</button></div>
+        <div class="loesung-box">Mögliche Belastungen: Konflikte zuhause, Ausgrenzung in der Klasse, Scham, Überforderung, Schlafmangel, Armutslagen, Krankheit in der Familie. Wichtig: als Hypothesen behandeln, nicht als Diagnose.</div>
+      </div>
+
+      <div class="analysis-board">
+        <h4>Board D: Wegekarte</h4>
+        <p>Welche Wege und Übergänge im Schulalltag sind kritisch oder hilfreich?</p>
+        <textarea id="sa-wege" placeholder="Schulweg, Pausenhof, Mensa, Bus, Ganztag, Rückzugsorte ..."></textarea>
+        <div class="toolbar"><button class="btn sec" onclick="showLoesung(this)">Musterlösung</button></div>
+        <div class="loesung-box">Zu prüfen sind Pausenhof, Flur, Mensa, Bus, Ganztagswechsel, Toilettenbereich und digitale Räume. Gerade Übergänge zeigen oft, wo Konflikte entstehen.</div>
+      </div>
+
+      <div class="analysis-board">
+        <h4>Board E: Netzwerktabelle</h4>
+        <p>Wer kann sinnvoll beteiligt werden, ohne Vertraulichkeit zu verletzen?</p>
+        <textarea id="sa-netzwerk" placeholder="Person / Funktion / Nutzen / Voraussetzung für Beteiligung ..."></textarea>
+        <div class="toolbar"><button class="btn sec" onclick="showLoesung(this)">Musterlösung</button></div>
+        <div class="loesung-box">Sinnvoll: Ben zuerst, dann mit Einwilligung Klassenleitung oder Sorgeberechtigte. Externe Stellen nur bei fachlichem Anlass. Gesprächsinhalte werden nicht ungefragt weitergegeben.</div>
+      </div>
+
+      <div class="analysis-board">
+        <h4>Board F: Beobachtungsraster</h4>
+        <p>Welche Beobachtungen brauchen Sie, ohne Ben zu überwachen?</p>
+        <textarea id="sa-beobachtung" placeholder="Wann tritt Verhalten auf? Wer ist beteiligt? Was geht voraus? Was folgt danach?"></textarea>
+        <div class="toolbar"><button class="btn sec" onclick="showLoesung(this)">Musterlösung</button></div>
+        <div class="loesung-box">Hilfreich sind konkrete, wertfreie Beobachtungen: Zeitpunkt, Ort, Auslöser, Beteiligte, Reaktion der Umgebung. Nicht hilfreich sind Etiketten wie „verhaltensauffällig“ ohne Beschreibung.</div>
+      </div>
+    </div></div>
+  </div>
+
+  <div class="accordion">
+    <button class="acc-header" onclick="toggleAcc(this)">Werkzeug 4: Formulierungshilfen und Gesprächsnotiz <em class="acc-icon">▼</em></button>
+    <div class="acc-body"><div class="acc-inner">
+      <div class="box amber"><b>Situation:</b> Eine Lehrkraft erwartet Auskunft über Gesprächsinhalte.</div>
+      <ul style="padding-left:18px;line-height:2.1;font-size:.92rem;margin-top:10px">
+        <li>„Ich kläre mit Ben, was er möchte, dass ich Ihnen mitteile."</li>
+        <li>„Ich kann Ihnen rückmelden, welche nächsten Schritte wir vereinbaren, aber keine vertraulichen Gesprächsinhalte."</li>
+        <li>„Lassen Sie uns gemeinsam überlegen, wie wir Ben unterstützen können, ohne seine Vertraulichkeit zu verletzen."</li>
+      </ul>
+      <div class="box green"><b>Datensparsame Gesprächsnotiz</b>Datum, Anlass, Beteiligte, vereinbarter nächster Schritt, keine unnötigen Details aus der Beratung.</div>
+      <textarea id="gespraechsnotiz-text" placeholder="Formulieren Sie eine kurze, datensparsame Gesprächsnotiz zum Fall Ben."></textarea>
+    </div></div>
+  </div>
+</div>
+</section>
+
+<section class="A" id="fehlerwerkstatt">
+<div class="sh"><h2>15. Fehlerwerkstatt</h2></div>
+<div class="sb">
+  <p>Lesen Sie die fehlerhafte Reaktion. Schätzen Sie zunächst ein, wie schwerwiegend der Fehler ist, dann formulieren Sie selbst eine bessere Reaktion und blenden die Musterlösung ein.</p>
+
+  <div class="fehler-card">
+    <div class="fehler-label">Typischer Fehler 1</div>
+    <p>Die Schulsozialarbeiterin verspricht: „Ich sage Ihnen nachher alles, was Ben erzählt hat."</p>
+    <div class="slider-row">
+      <label>Schwere:</label>
+      <input type="range" min="1" max="5" value="3" oninput="this.nextElementSibling.textContent=this.value">
+      <span class="slider-val">3</span>
+      <label style="margin-left:6px">/ 5</label>
+    </div>
+    <textarea id="fehler1" placeholder="Was ist problematisch? Was wäre besser?"></textarea>
+    <div class="toolbar"><button class="btn sec" onclick="showLoesung(this)">Musterlösung</button></div>
+    <div class="loesung-box">Eine pauschale Zusage verletzt § 203 StGB und untergräbt Bens Vertrauen. Fachlich korrekt: Transparent erläutern, was weitergegeben werden kann, und Bens Einverständnis einholen. Schweregrad: 5/5.</div>
+  </div>
+
+  <div class="fehler-card">
+    <div class="fehler-label">Typischer Fehler 2</div>
+    <p>Der Schulsozialarbeiter lehnt ab: „Ben ist nicht freiwillig gekommen, ich mache grundsätzlich nichts."</p>
+    <div class="slider-row">
+      <label>Schwere:</label>
+      <input type="range" min="1" max="5" value="3" oninput="this.nextElementSibling.textContent=this.value">
+      <span class="slider-val">3</span>
+      <label style="margin-left:6px">/ 5</label>
+    </div>
+    <textarea id="fehler2" placeholder="Was ist problematisch? Was wäre besser?"></textarea>
+    <div class="toolbar"><button class="btn sec" onclick="showLoesung(this)">Musterlösung</button></div>
+    <div class="loesung-box">Freiwilligkeit ist ein Prinzip, kein Abwehrreflex. Schulsozialarbeit kann aktiv Kontakt aufnehmen und einladen, ob Ben das Angebot annimmt, entscheidet er selbst. Schweregrad: 3/5.</div>
+  </div>
+
+  <div class="fehler-card">
+    <div class="fehler-label">Typischer Fehler 3</div>
+    <p>Die Schulsozialarbeiterin übernimmt ungeprüft die Deutung der Lehrkraft: „Ben stört, also ist Ben das Problem."</p>
+    <div class="slider-row">
+      <label>Schwere:</label>
+      <input type="range" min="1" max="5" value="3" oninput="this.nextElementSibling.textContent=this.value">
+      <span class="slider-val">3</span>
+      <label style="margin-left:6px">/ 5</label>
+    </div>
+    <textarea id="fehler3" placeholder="Was ist problematisch? Was wäre besser?"></textarea>
+    <div class="toolbar"><button class="btn sec" onclick="showLoesung(this)">Musterlösung</button></div>
+    <div class="loesung-box">Störendes Verhalten ist ein Symptom. Schulsozialarbeit denkt vom Kind aus: Welche Belastungen, Konflikte oder Überforderungen könnten Bens Verhalten erklären? Das Gespräch mit Ben ist der Ausgangspunkt, nicht die Fremddeutung. Schweregrad: 4/5.</div>
+  </div>
+
+  <div class="toolbar" style="margin-top:6px">
+    <button class="btn sec done" data-key="fehler">Fehlerwerkstatt markieren</button>
+    <span class="saved" id="hint-fehler">Gespeichert</span>
+  </div>
+</div>
+</section>
+
+<section class="A" id="reflexion">
+<div class="sh"><h2>16. Reflexion</h2></div>
+<div class="sb">
+  <p>Füllen Sie das Reflexionsraster aus. Beziehen Sie sich auf eine konkrete Situation, aus dem Szenario oder aus Ihrer eigenen Praxiserfahrung.</p>
+  <table class="raster">
+    <thead><tr><th>Situation</th><th>Meine erste Reaktion</th><th>Fachlich begründete Alternative</th></tr></thead>
+    <tbody>
+      <tr><td><textarea id="r1a" placeholder="Was ist passiert?"></textarea></td><td><textarea id="r1b" placeholder="Wie hätte ich spontan reagiert?"></textarea></td><td><textarea id="r1c" placeholder="Was wäre professionell?"></textarea></td></tr>
+      <tr><td><textarea id="r2a" placeholder="Zweite Situation ..."></textarea></td><td><textarea id="r2b" placeholder="Spontanreaktion ..."></textarea></td><td><textarea id="r2c" placeholder="Professionelle Alternative ..."></textarea></td></tr>
+    </tbody>
+  </table>
+  <div class="toolbar">
+    <button class="btn sec done" data-key="reflex">Reflexion markieren</button>
+    <span class="saved" id="hint-reflex">Gespeichert</span>
+  </div>
+</div>
+</section>
+
+<section class="A" id="fallgutachten">
+<div class="sh"><h2>17. Fallgutachten als Leistungsnachweis</h2><div class="sub">Kurzformat für Hochschule, Weiterbildung oder Praxisanleitung</div></div>
+<div class="sb">
+  <div class="box green"><b>Aufgabe</b>Erstellen Sie ein kurzes Fallgutachten zum Fall „Ben und Frau Kramer“. Das Gutachten soll zeigen, dass Sie Auftrag, Rolle, Grenzen, Vertraulichkeit und Kooperation fachlich begründet verbinden können.</div>
+  <div class="def-block" style="border-color:var(--abd)">
+    <div class="def-label" style="color:var(--aa)">Erwartetes Format</div>
+    <ol style="padding-left:20px;font-size:.9rem;line-height:1.65">
+      <li><b>Ausgangslage:</b> Was ist beobachtbar, was ist Interpretation?</li>
+      <li><b>Auftragsklärung:</b> Wer will was von wem, mit welchem legitimen Auftrag?</li>
+      <li><b>Rollenklärung:</b> Was ist Aufgabe der Schulsozialarbeit, was nicht?</li>
+      <li><b>Vertraulichkeit:</b> Was darf weitergegeben werden, was nur mit Einwilligung?</li>
+      <li><b>Nächster Schritt:</b> Welche erste Handlung ist fachlich angemessen und warum?</li>
+    </ol>
+  </div>
+  <textarea id="fallgutachten-text" style="min-height:220px" placeholder="Mein Fallgutachten, ca. 500–700 Wörter ..."></textarea>
+  <div class="toolbar" style="margin-top:12px">
+    <button class="btn sec done" data-key="gutachten">Fallgutachten markieren</button>
+    <span class="saved" id="hint-gutachten">Gespeichert</span>
+  </div>
+  <div class="box amber" style="margin-top:12px"><b>Bewertungshinweis</b>Für einen offiziellen Hochschul- oder Trägerkurs sollte dieses Fallgutachten durch Lehrende, Praxisanleitungen oder Tutorinnen und Tutoren anhand eines Bewertungsrasters geprüft werden. Das Modul selbst prüft nur Mindestumfang und Bearbeitungsstatus.</div>
+</div>
+</section>
+
+<section class="A" id="gelingen">
+<div class="sh"><h2>18. Gelingensnachweis</h2></div>
+<div class="sb">
+  <div class="box green">
+    <b>Aufgabe</b>
+    <p style="margin-top:6px">Formulieren Sie eine professionelle Kurzreaktion auf den Fall „Ben und Frau Kramer". Ihre Antwort soll zeigen, dass Sie Auftrag, Rolle, Vertraulichkeit und Kooperation begründet verbinden können.</p>
+  </div>
+  <div class="def-block" style="border-color:var(--abd)">
+    <div class="def-label" style="color:var(--aa)">Mindestkriterien</div>
+    <p style="font-size:.9rem;margin-bottom:8px">Der Gelingensnachweis gilt als erfüllt, wenn Ihre Antwort die folgenden Punkte fachlich erkennbar enthält:</p>
+    <ol style="padding-left:20px;font-size:.9rem;line-height:1.65">
+      <li>Sie erklären den Auftrag der Schulsozialarbeit mit Bezug auf Jugendhilfe und Schule.</li>
+      <li>Sie benennen mindestens zwei Rollengrenzen konkret.</li>
+      <li>Sie formulieren eine fachlich angemessene Reaktion auf die Anfrage der Lehrkraft.</li>
+      <li>Sie wägen Vertraulichkeit und Kooperation im Fall ab.</li>
+      <li>Sie begründen einen konkreten nächsten Handlungsschritt mit Ben.</li>
+    </ol>
+  </div>
+  <textarea id="gelingen-text" style="min-height:150px" placeholder="Meine professionelle Kurzreaktion ..."></textarea>
+
+  <h3 style="margin-top:20px">Kompetenz-Selbsteinschätzung</h3>
+  <p style="font-size:.88rem;color:var(--muted);margin-bottom:8px">Schätzen Sie sich für jedes Lernziel ein: Grün = sicher, Gelb = noch unsicher, Rot = muss ich vertiefen.</p>
+  <div class="komp-grid">
+    <div class="komp-row"><div class="kt">Auftrag der SSA erläutern</div><div class="ampel-btns"><button class="ampel-btn g" onclick="setAmpel(this,'g')">●</button><button class="ampel-btn y" onclick="setAmpel(this,'y')">●</button><button class="ampel-btn r" onclick="setAmpel(this,'r')">●</button></div></div>
+    <div class="komp-row"><div class="kt">Eigene Rolle abgrenzen</div><div class="ampel-btns"><button class="ampel-btn g" onclick="setAmpel(this,'g')">●</button><button class="ampel-btn y" onclick="setAmpel(this,'y')">●</button><button class="ampel-btn r" onclick="setAmpel(this,'r')">●</button></div></div>
+    <div class="komp-row"><div class="kt">Rollenkonflikt erkennen und reagieren</div><div class="ampel-btns"><button class="ampel-btn g" onclick="setAmpel(this,'g')">●</button><button class="ampel-btn y" onclick="setAmpel(this,'y')">●</button><button class="ampel-btn r" onclick="setAmpel(this,'r')">●</button></div></div>
+    <div class="komp-row"><div class="kt">Vertraulichkeit und Kooperation</div><div class="ampel-btns"><button class="ampel-btn g" onclick="setAmpel(this,'g')">●</button><button class="ampel-btn y" onclick="setAmpel(this,'y')">●</button><button class="ampel-btn r" onclick="setAmpel(this,'r')">●</button></div></div>
+    <div class="komp-row"><div class="kt">4-Fragen-Schema anwenden</div><div class="ampel-btns"><button class="ampel-btn g" onclick="setAmpel(this,'g')">●</button><button class="ampel-btn y" onclick="setAmpel(this,'y')">●</button><button class="ampel-btn r" onclick="setAmpel(this,'r')">●</button></div></div>
+  </div>
+
+  <ul class="checklist" style="margin-top:16px">
+    <li><input type="checkbox" id="c1"><label for="c1">Ich habe den Auftrag mit beiden Beteiligten transparent geklärt.</label></li>
+    <li><input type="checkbox" id="c2"><label for="c2">Ich habe Bens Wunsch nach Vertraulichkeit respektiert und erläutert.</label></li>
+    <li><input type="checkbox" id="c3"><label for="c3">Ich habe kooperativ mit Frau Kramer kommuniziert, ohne Gesprächsinhalte preiszugeben.</label></li>
+    <li><input type="checkbox" id="c4"><label for="c4">Ich habe keine therapeutische oder disziplinarische Rolle übernommen.</label></li>
+    <li><input type="checkbox" id="c5"><label for="c5">Mein nächster Schritt ist fachlich begründet und mit Ben abgesprochen.</label></li>
+  </ul>
+  <div class="toolbar" style="margin-top:16px">
+    <button class="btn sec done" data-key="gelingen">Gelingensnachweis markieren</button>
+    <button class="btn" onclick="window.print()">Drucken / als PDF speichern</button>
+    <span class="saved" id="hint-gelingen">Gespeichert</span>
+  </div>
+  <div id="gelingen-validation" class="validation-msg"></div>
+</div>
+</section>
+
+<section class="T" id="literatur">
+<div class="sh"><h2>19. Literatur und Quellenhinweise</h2><div class="sub">Auswahl für Studium, Weiterbildung und fachliche Vertiefung</div></div>
+<div class="sb">
+  <p>Die folgende Auswahl dient der wissenschaftlichen Einordnung des Moduls. Für einen hochschulischen Einsatz sollte die Literaturliste durch die jeweilige Lehrperson an das konkrete Curriculum angepasst werden.</p>
+  <div class="def-block">
+    <div class="def-label">Rechtliche Grundlagen</div>
+    <ul style="padding-left:18px;font-size:.9rem;line-height:1.7">
+      <li>Sozialgesetzbuch VIII, insbesondere § 13a SGB VIII Schulsozialarbeit, § 13 SGB VIII Jugendsozialarbeit, § 8a SGB VIII Schutzauftrag und § 81 SGB VIII Zusammenarbeit.</li>
+      <li>Niedersächsisches Schulgesetz, insbesondere § 2 Bildungsauftrag sowie Regelungen zur Zusammenarbeit von Schule und Jugendhilfe.</li>
+      <li>Niedersächsischer Erlass „Soziale Arbeit in schulischer Verantwortung“, RdErl. d. MK vom 01.08.2017.</li>
+      <li>§ 203 StGB Schweigepflicht sowie Datenschutzgrundverordnung (DSGVO) und schul-/trägerbezogene Datenschutzregelungen.</li>
+    </ul>
+  </div>
+  <div class="def-block">
+    <div class="def-label">Fachliteratur zur Orientierung</div>
+    <ul style="padding-left:18px;font-size:.9rem;line-height:1.7">
+      <li>Speck, Karsten: Schulsozialarbeit. Eine Einführung. Grundlagen, Aufgabenfelder und Qualitätsentwicklung.</li>
+      <li>Deinet, Ulrich / Reutlinger, Christian: Sozialraumorientierung und sozialräumliche Jugendarbeit.</li>
+      <li>Thiersch, Hans: Lebensweltorientierte Soziale Arbeit. Aufgaben der Praxis im sozialen Wandel.</li>
+      <li>Staub-Bernasconi, Silvia: Soziale Arbeit als Handlungswissenschaft und Menschenrechtsprofession.</li>
+      <li>DBSH: Berufsethik und berufliche Standards Sozialer Arbeit.</li>
+    </ul>
+  </div>
+  <div class="box red"><b>Prüfhinweis</b>Rechtsgrundlagen und Erlasse können sich ändern. Für verbindliche Prüfungs-, Beratungs- oder Kinderschutzentscheidungen sind immer die aktuellen Rechtsquellen, Dienstanweisungen und Trägerregelungen heranzuziehen.</div>
+</div>
+</section>
+
+<section class="A" id="transfer">
+<div class="sh"><h2>20. Transfer in die Praxis</h2></div>
+<div class="sb">
+  <p>Übertragen Sie das Erarbeitete auf Ihre konkrete Praxisstelle oder eine fiktive Schule.</p>
+  <div class="transfer-steps">
+    <div class="ts"><div class="ts-num">1</div><div><b>Erwartungen des Kollegiums</b><span>Welche Erwartungen richten Lehrkräfte an Ihrer Schule an die Schulsozialarbeit, und wo weichen diese vom fachlichen Auftrag ab?</span><textarea id="t1" style="margin-top:8px" placeholder="Meine Beobachtung ..."></textarea></div></div>
+    <div class="ts"><div class="ts-num">2</div><div><b>Perspektive der Schülerinnen und Schüler</b><span>Was erwarten Kinder und Jugendliche von der Schulsozialarbeit? Wo deckt sich das mit dem Auftrag?</span><textarea id="t2" style="margin-top:8px" placeholder="Meine Beobachtung ..."></textarea></div></div>
+    <div class="ts"><div class="ts-num">3</div><div><b>Klärungsbedarf</b><span>Wo brauchen Sie an Ihrer Schule klare Absprachen, und mit wem?</span><textarea id="t3" style="margin-top:8px" placeholder="Konkrete Punkte ..."></textarea></div></div>
+  </div>
+  <div class="toolbar" style="margin-top:12px">
+    <button class="btn sec done" data-key="transfer">Transfer markieren</button>
+    <span class="saved" id="hint-transfer">Gespeichert</span>
+  </div>
+  <div class="box red" style="margin-top:16px"><b>Hinweis</b>Diese Lerneinheit ersetzt keine Rechtsberatung, Supervision oder Kinderschutzfachberatung.</div>
+</div>
+</section>
+
+</div><!-- end content col -->
+</div><!-- end grid -->
+</main>
+
+<button id="btt" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="Nach oben">↑</button>
+
+
+<section class="send-panel">
+<div class="wrap">
+  <h2 style="font-size:1.2rem;margin-bottom:8px">Ergebnisse an Dozent:in senden</h2>
+  <p style="font-size:.9rem;color:var(--muted);margin-bottom:10px">Tragen Sie oben Ihren Namen ein. Der Versand wird erst freigegeben, wenn die Pflichtteile des Gelingensnachweises ausgefüllt sind.</p>
+  <div id="send-validation" class="validation-msg"></div>
+  <button id="send-btn" class="send-button" onclick="sendToSheets()" disabled>Jetzt senden</button>
+  <span id="send-status" style="margin-left:16px;font-size:.9rem;color:var(--muted)"></span>
+</div>
+</section>
+
+<footer>Version 0.6 &nbsp;|&nbsp; SOL-Lernpfad Schulsozialarbeit Niedersachsen &nbsp;|&nbsp; Band 1, Modul 1 &nbsp;|&nbsp; Eingaben werden lokal gespeichert; Versand nur nach Klick auf „Jetzt senden“.</footer>
+
+<script>
+const P='sol_b1m1_v2_';
+// localStorage
+document.querySelectorAll('textarea').forEach(ta=>{
+  if(!ta.id)return;
+  const s=localStorage.getItem(P+ta.id);if(s)ta.value=s;
+  ta.addEventListener('input',()=>{ localStorage.setItem(P+ta.id,ta.value); refreshAutoTasks(); updateHeaderSendBtn(); });
+});
+document.querySelectorAll('input[type=checkbox]').forEach(cb=>{
+  if(localStorage.getItem(P+'cb_'+cb.id)==='1')cb.checked=true;
+  cb.addEventListener('change',()=>{ localStorage.setItem(P+'cb_'+cb.id,cb.checked?'1':'0'); updateHeaderSendBtn(); });
+});
+
+// PROGRESS
+const progressKeys = new Set(["vorwissen","audiofragen","luecken","sort","abgr","branch","fall","a1","a2","a3","a4","schema","fehler","reflex","gutachten","gelingen","transfer"]);
+const TOTAL = progressKeys.size || 1;
+const done=new Set(JSON.parse(localStorage.getItem(P+'done')||'[]'));
+let lastValidationMsg='';
+function markProgressKey(k){
+  if(!progressKeys.has(k)) return;
+  done.add(k);
+  localStorage.setItem(P+'done',JSON.stringify([...done].filter(x => progressKeys.has(x))));
+  const btn=[...document.querySelectorAll('.done')].find(b=>b.dataset.key===k);
+  if(btn){btn.textContent='Markiert';btn.disabled=true;}
+  const h=document.getElementById('hint-'+k);
+  if(h){h.classList.add('show');setTimeout(()=>h.classList.remove('show'),2200);}
+  upProg();
+}
+function removeProgressKey(k){
+  if(done.delete(k)) localStorage.setItem(P+'done',JSON.stringify([...done].filter(x => progressKeys.has(x))));
+}
+function upProg(){
+  const validDone = [...done].filter(k => progressKeys.has(k)).length;
+  document.getElementById('bar').style.width=Math.min(100,validDone/TOTAL*100)+'%';
+  document.getElementById('score').textContent=validDone+' von '+TOTAL+' Aufgaben erledigt';
+  localStorage.setItem(P+'done',JSON.stringify([...done].filter(k => progressKeys.has(k))));
+  updateHeaderSendBtn();
+}
+function lueckenAreCorrect(){
+  return [...document.querySelectorAll('.luecke')].every(inp => normalizeAnswer(inp.value) === normalizeAnswer(inp.dataset.ans));
+}
+function abgrIsCorrect(){
+  return ['ja','nein'].every(zk => {
+    const zone=document.getElementById(zk==='ja'?'abgr-ja':'abgr-nein');
+    const ids=[...zone.querySelectorAll('.chip')].map(c=>c.dataset.id).sort().join('|');
+    return ids === [...ABGR_SOL[zk]].sort().join('|');
+  });
+}
+function dndIsCorrect(){
+  return Object.keys(DND_SOL).every(zk => {
+    const zone=[...document.querySelectorAll('.dnd-targets .drop-zone')].find(z=>z.dataset.zone===zk);
+    const ids=[...zone.querySelectorAll('.chip')].map(c=>c.dataset.id).sort().join('|');
+    return ids === [...DND_SOL[zk]].sort().join('|');
+  });
+}
+function activeSceneId(){
+  return document.querySelector('.branch-scene.active')?.id || '';
+}
+function canMarkDone(k, show=false){
+  const problems=[];
+  if(k==='vorwissen' && countFilled(['vw1','vw2','vw3','vw4'],40)<2) problems.push('Bitte mindestens zwei Vorwissensfelder sinnvoll ausfüllen.');
+  if(k==='audiofragen' && countFilled(['audiofrage1','audiofrage2','audiofrage3','audiofrage4','audiofrage5'],50)<3) problems.push('Bitte mindestens drei Audiofragen mit je mindestens 50 Zeichen beantworten.');
+  if(k==='luecken' && !lueckenAreCorrect()) problems.push('Bitte den Lückentext erst korrekt prüfen.');
+  if(k==='sort' && textLen('sort-reflex')<60) problems.push('Bitte die Reflexionsfrage zur Prinzipien-Reihenfolge beantworten.');
+  if(k==='abgr' && !abgrIsCorrect()) problems.push('Bitte die Abgrenzungsaufgabe erst korrekt prüfen.');
+  if(k==='branch' && !['scene2a','scene2c','scene2e'].includes(activeSceneId())) problems.push('Bitte einen fachlich tragfähigen Endpunkt im Szenario erreichen.');
+  if(k==='fall' && textLen('fall-text')<80) problems.push('Bitte die Fallreflexion mit mindestens 80 Zeichen ausfüllen.');
+  if(k==='a2' && (!dndIsCorrect() || textLen('a2-text')<40)) problems.push('Bitte die Rollenzuordnung korrekt lösen und kurz begründen.');
+  if(k==='a4' && document.querySelectorAll('.anno-sent.grenze').length<3) problems.push('Bitte mindestens drei Rollengrenzen im Text markieren.');
+  if(k==='schema' && textLen('schema-text')<150) problems.push('Bitte das 4-Fragen-Schema vollständig anwenden.');
+  if(k==='fehler' && (countFilled(['fehler1','fehler2','fehler3'],60)<2 || document.querySelectorAll('.fehler-card .loesung-box.show').length<2)) problems.push('Bitte mindestens zwei Fehler analysieren und zwei Musterlösungen öffnen.');
+  if(k==='reflex' && countFilled(['r1a','r1b','r1c','r2a','r2b','r2c'],80)<3) problems.push('Bitte mindestens drei Reflexionsfelder mit je mindestens 80 Zeichen ausfüllen.');
+  if(k==='gutachten' && wordCount('fallgutachten-text')<350) problems.push('Bitte das Fallgutachten ausführlicher formulieren, mindestens 350 Wörter.');
+  if(k==='gelingen'){
+    if(textLen('gelingen-text')<300) problems.push('Bitte den Gelingensnachweis mit mindestens 300 Zeichen ausformulieren.');
+    if(!ampelComplete()) problems.push('Bitte alle fünf Kompetenz-Ampeln setzen.');
+    if(!checklistComplete()) problems.push('Bitte alle fünf Prüfpunkte im Gelingensnachweis bestätigen.');
+  }
+  if(k==='transfer' && countFilled(['t1','t2','t3'],50)<3) problems.push('Bitte alle drei Transferfelder konkret ausfüllen.');
+  if(show && problems.length){ alert(problems.join('\n')); }
+  return problems.length===0;
+}
+function refreshAutoTasks(){
+  const a1ok = !!document.querySelector('.task[data-task="a1"] .choice.correct[data-correct="true"]') && textLen('a1-begruendung')>=50;
+  const a3ok = !!document.querySelector('.task[data-task="a3"] .choice.correct[data-correct="true"]') && textLen('a3-begruendung')>=50;
+  if(a1ok) markProgressKey('a1'); else removeProgressKey('a1');
+  if(a3ok) markProgressKey('a3'); else removeProgressKey('a3');
+  upProg();
+}
+upProg();
+
+// DONE BUTTONS
+document.querySelectorAll('.done').forEach(btn=>{
+  const k=btn.dataset.key;
+  if(done.has(k)){btn.textContent='Markiert';btn.disabled=true;}
+  btn.addEventListener('click',()=>{
+    if(!canMarkDone(k,true)) return;
+    markProgressKey(k);
+  });
+});
+// MULTIPLE CHOICE
+document.querySelectorAll('.choice').forEach(btn=>{
+  btn.addEventListener('click',()=>{
+    const t=btn.closest('.task');
+    t.querySelectorAll('.choice').forEach(b=>b.classList.remove('correct','wrong'));
+    btn.classList.add(btn.dataset.correct==='true'?'correct':'wrong');
+    if(btn.dataset.correct==='true') t.querySelector('.feedback')?.classList.add('show');
+    refreshAutoTasks();
+  });
+});
+
+// FEHLERWERKSTATT
+function showLoesung(btn){
+  const container = btn.closest('.fehler-card, .analysis-board, .task, .accordion');
+  if(!container) return;
+  const box = container.querySelector('.loesung-box');
+  if(!box) return;
+  box.classList.add('show');
+  btn.disabled = true;
+  btn.textContent = 'Eingeblendet';
+}
+
+// FLIP CARDS (Methodenkoffer Karten)
+document.querySelectorAll('[onclick*="flipped-fc"]').forEach(el=>{
+  el.addEventListener('click',function(){
+    const exp=this.querySelector('.fc-exp');
+    if(exp)exp.style.display=exp.style.display==='block'?'none':'block';
+  });
+});
+
+// ACCORDION
+function toggleAcc(h){
+  const b=h.nextElementSibling,ic=h.querySelector('.acc-icon'),o=b.classList.contains('open');
+  b.classList.toggle('open',!o);ic.style.transform=o?'':'rotate(180deg)';
+}
+
+// BRANCHING
+function branchLevel(id){
+  if(id==='0') return 0;
+  if(String(id).startsWith('1')) return 1;
+  if(String(id).startsWith('2')) return 2;
+  return 0;
+}
+function updateBranchDots(id){
+  const level=branchLevel(id);
+  document.querySelectorAll('.branch-step').forEach((d,i)=>{
+    d.className='branch-step'+(i<level?' done':i===level?' cur':'');
+  });
+}
+function goScene(id){
+  document.querySelectorAll('.branch-scene').forEach(s=>s.classList.remove('active'));
+  document.getElementById('scene'+id)?.classList.add('active');
+  updateBranchDots(id);
+}
+function resetBranch(){
+  document.querySelectorAll('.branch-scene').forEach(s=>s.classList.remove('active'));
+  document.getElementById('scene0').classList.add('active');
+  updateBranchDots('0');
+}
+
+// LÜCKENTEXT
+function normalizeAnswer(s){
+  return String(s||'').trim().toLowerCase()
+    .replaceAll('ä','ae').replaceAll('ö','oe').replaceAll('ü','ue').replaceAll('ß','ss')
+    .replace(/\s+/g,' ');
+}
+function checkLuecken(){
+  let ok=0,total=5;
+  document.querySelectorAll('.luecke').forEach(inp=>{
+    const accepted=String(inp.dataset.ans||'').split('|').map(normalizeAnswer);
+    const val=normalizeAnswer(inp.value);
+    const correct=accepted.includes(val);
+    inp.classList.toggle('correct',correct);
+    inp.classList.toggle('wrong',!correct&&val.length>0);
+    if(correct)ok++;
+  });
+  const fb=document.getElementById('luecken-fb');
+  fb.style.display='block';
+  fb.innerHTML=ok===total
+    ?'<span style="color:var(--green);font-weight:700">Alle '+total+' Lücken korrekt ausgefüllt.</span>'
+    :'<span style="color:var(--amber)">'+ok+' von '+total+' korrekt, prüfen Sie die markierten Felder.</span>';
+  if(ok===total) markProgressKey('luecken');
+}
+function resetLuecken(){
+  document.querySelectorAll('.luecke').forEach(i=>{i.value='';i.classList.remove('correct','wrong');});
+  document.getElementById('luecken-fb').style.display='none';
+}
+
+// ABGRENZUNG D&D
+const ABGR_SOL={ja:['a2','a4','a6'],nein:['a1','a3','a5','a7']};
+const ABGR_INFO={
+  a1:'Leistungsbewertung ist Aufgabe der Lehrkraft.',
+  a2:'Vertrauliche Beratung ist Kernauftrag der Schulsozialarbeit.',
+  a3:'Strafarbeiten: Disziplinaraufgabe der Schule, nicht SSA.',
+  a4:'Vernetzung mit der Jugendhilfe: Kernaufgabe der SSA.',
+  a5:'Diagnostik ist Aufgabe der Schulpsychologie.',
+  a6:'Parteilichkeit für Kinder und Jugendliche: Grundprinzip der SSA.',
+  a7:'Hoheitliche Entscheidungen im Kinderschutz liegen beim ASD; SSA erkennt Hinweise, dokumentiert, folgt dem Schutzkonzept und kooperiert.',
+};
+initAbgrDnD();
+function initAbgrDnD(){
+  document.querySelectorAll('#abgr-pool .chip, #abgr-ja .chip, #abgr-nein .chip').forEach(addChipDrag);
+  ['abgr-pool','abgr-ja','abgr-nein'].forEach(id=>addZoneDrop(document.getElementById(id)));
+}
+function addChipDrag(chip){
+  chip.addEventListener('dragstart',e=>{window._dragChip=chip;setTimeout(()=>chip.classList.add('dragging'),0);e.dataTransfer.effectAllowed='move';});
+  chip.addEventListener('dragend',()=>{chip.classList.remove('dragging');window._dragChip=null;});
+}
+function addZoneDrop(zone){
+  const target=zone.id==='abgr-pool'?zone:zone.querySelector('.dnd-chips')||zone;
+  zone.addEventListener('dragover',e=>{e.preventDefault();zone.classList.add('over');});
+  zone.addEventListener('dragleave',()=>zone.classList.remove('over'));
+  zone.addEventListener('drop',e=>{e.preventDefault();zone.classList.remove('over');if(window._dragChip)target.appendChild(window._dragChip);});
+}
+function checkAbgr(){
+  const fb=document.getElementById('abgr-fb');let lines=[],ok=true;
+  ['abgr-ja','abgr-nein'].forEach(id=>{
+    const zone=document.getElementById(id);
+    const zk=id==='abgr-ja'?'ja':'nein';
+    zone.querySelectorAll('.chip').forEach(c=>{
+      const correct=ABGR_SOL[zk]?.includes(c.dataset.id);
+      if(!correct)ok=false;
+      lines.push(`${c.textContent.trim()} → ${correct?'✅':'⚠️'} ${ABGR_INFO[c.dataset.id]||''}`);
+    });
+  });
+  fb.className='dnd-fb show '+(ok?'ok':'hint');
+  fb.innerHTML=lines.join('<br>')||'Bitte ordnen Sie zunächst alle Aussagen zu.';
+  if(ok) markProgressKey('abgr');
+}
+
+function resetAbgr(){
+  const pool=document.getElementById('abgr-pool');
+  document.querySelectorAll('#abgr-ja .chip,#abgr-nein .chip').forEach(c=>pool.appendChild(c));
+  const fb=document.getElementById('abgr-fb');fb.className='dnd-fb';fb.innerHTML='';
+}
+
+// AUFGABE 2 D&D
+const DND_SOL={ssa:['c2','c4','c6'],lk:['c1','c4'],asd:['c3','c7'],schulpsy:['c5']};
+const DND_INFO={c1:'Unterricht planen: Lehrkraft.',c2:'Familiäre Belastung erkunden: SSA.',c3:'Hoheitliche Kinderschutzentscheidungen: ASD; SSA erkennt Hinweise und kooperiert nach Schutzkonzept.',c4:'Pausenkonflikt: SSA und Lehrkraft (Kooperation).',c5:'Lernschwäche diagnostizieren: Schulpsychologie.',c6:'Kooperationsvereinbarung: SSA / Träger verhandelt mit Schule.',c7:'Hilfeplan § 36 SGB VIII: ASD.'};
+let draggedChip=null;
+document.querySelectorAll('#chip-pool .chip, .dnd-targets .chip').forEach(initChip);
+document.querySelectorAll('.drop-zone, #chip-pool').forEach(initZone);
+function initChip(chip){
+  chip.addEventListener('dragstart',e=>{draggedChip=chip;setTimeout(()=>chip.classList.add('dragging'),0);e.dataTransfer.effectAllowed='move';});
+  chip.addEventListener('dragend',()=>{chip.classList.remove('dragging');draggedChip=null;});
+}
+function initZone(zone){
+  zone.addEventListener('dragover',e=>{e.preventDefault();zone.classList.add('over');});
+  zone.addEventListener('dragleave',()=>zone.classList.remove('over'));
+  zone.addEventListener('drop',e=>{
+    e.preventDefault();zone.classList.remove('over');
+    if(!draggedChip)return;
+    const t=zone.id==='chip-pool'?zone:zone.querySelector('.dnd-chips');
+    if(t)t.appendChild(draggedChip);
+  });
+}
+function checkDnD(){
+  const fb=document.getElementById('dnd-fb');let lines=[],ok=true;
+  document.querySelectorAll('.drop-zone').forEach(zone=>{
+    const zk=zone.dataset.zone;
+    zone.querySelectorAll('.chip').forEach(c=>{
+      const correct=DND_SOL[zk]?.includes(c.dataset.id);
+      if(!correct)ok=false;
+      lines.push(`<b>${zone.querySelector('h4').textContent}:</b> ${c.textContent}, ${correct?'✅':'⚠️'} ${DND_INFO[c.dataset.id]||''}`);
+    });
+  });
+  document.querySelectorAll('#chip-pool .chip').forEach(c=>lines.push(`<b>Noch nicht zugeordnet:</b> ${c.textContent}`));
+  fb.className='dnd-fb show '+(ok?'ok':'hint');
+  fb.innerHTML=lines.join('<br>')||'Bitte alle Aufgaben zuordnen.';
+  if(ok && textLen('a2-text')>=40) markProgressKey('a2');
+}
+
+function resetDnD(){
+  const pool=document.getElementById('chip-pool');
+  document.querySelectorAll('.dnd-targets .chip').forEach(c=>pool.appendChild(c));
+  const fb=document.getElementById('dnd-fb');fb.className='dnd-fb';fb.innerHTML='';
+}
+
+// ANNOTATION, mit localStorage
+function annoSave(){
+  const states=[...document.querySelectorAll('.anno-sent')].map(s=>s.classList.contains('grenze')?2:s.classList.contains('marked')?1:0);
+  localStorage.setItem(P+'anno',JSON.stringify(states));
+}
+function annoClick(el){
+  if(el.classList.contains('grenze')){el.classList.remove('grenze','marked');}
+  else if(el.classList.contains('marked')){el.classList.add('grenze');}
+  else{el.classList.add('marked');}
+  const n=document.querySelectorAll('.anno-sent.grenze').length;
+  document.getElementById('anno-count').textContent=n+' Satz'+(n===1?'':'sätze')+' als Rollengrenze markiert';
+  annoSave();
+}
+// Annotation wiederherstellen
+(function(){
+  const saved=JSON.parse(localStorage.getItem(P+'anno')||'[]');
+  document.querySelectorAll('.anno-sent').forEach((s,i)=>{
+    if(saved[i]===2){s.classList.add('grenze','marked');}
+    else if(saved[i]===1){s.classList.add('marked');}
+  });
+  const n=document.querySelectorAll('.anno-sent.grenze').length;
+  const el=document.getElementById('anno-count');
+  if(el&&n>0)el.textContent=n+' Satz'+(n===1?'':'sätze')+' als Rollengrenze markiert';
+})();
+
+// SORTIERUNG (Prinzipien), mit localStorage
+let dragSrc=null;
+function sortSave(){
+  const order=[...document.querySelectorAll('.sort-item')].map(i=>i.querySelector('b').textContent);
+  localStorage.setItem(P+'sort',JSON.stringify(order));
+}
+// Reihenfolge wiederherstellen
+(function(){
+  const saved=JSON.parse(localStorage.getItem(P+'sort')||'null');
+  if(!saved)return;
+  const list=document.getElementById('sort-list');
+  saved.forEach(name=>{
+    const item=[...list.querySelectorAll('.sort-item')].find(i=>i.querySelector('b').textContent===name);
+    if(item)list.appendChild(item);
+  });
+})();
+document.querySelectorAll('.sort-item').forEach(item=>{
+  item.addEventListener('dragstart',()=>{dragSrc=item;item.style.opacity='.4';});
+  item.addEventListener('dragend',()=>{item.style.opacity='';dragSrc=null;sortSave();});
+  item.addEventListener('dragover',e=>{e.preventDefault();item.classList.add('drag-over');});
+  item.addEventListener('dragleave',()=>item.classList.remove('drag-over'));
+  item.addEventListener('drop',e=>{
+    e.preventDefault();item.classList.remove('drag-over');
+    if(dragSrc&&dragSrc!==item){
+      const list=document.getElementById('sort-list');
+      const items=[...list.children];
+      const si=items.indexOf(dragSrc),ti=items.indexOf(item);
+      si<ti?list.insertBefore(dragSrc,item.nextSibling):list.insertBefore(dragSrc,item);
+    }
+  });
+});
+
+// AMPEL, mit localStorage
+function setAmpel(btn,color){
+  const row=btn.closest('.ampel-btns');
+  row.querySelectorAll('.ampel-btn').forEach(b=>b.classList.remove('active'));
+  btn.classList.add('active');
+  // Speichern: Index der Zeile
+  const allRows=document.querySelectorAll('.komp-row');
+  allRows.forEach((r,i)=>{
+    const ab=r.querySelector('.ampel-btn.active');
+    if(ab)localStorage.setItem(P+'ampel_'+i,ab.classList.contains('g')?'g':ab.classList.contains('y')?'y':'r');
+  updateHeaderSendBtn();
+  });
+}
+// Ampel wiederherstellen
+document.querySelectorAll('.komp-row').forEach((row,i)=>{
+  const saved=localStorage.getItem(P+'ampel_'+i);
+  if(saved){
+    const btn=row.querySelector('.ampel-btn.'+saved);
+    if(btn){row.querySelectorAll('.ampel-btn').forEach(b=>b.classList.remove('active'));btn.classList.add('active');}
+  }
+});
+
+// MOBILE NAV
+document.getElementById('navToggle').addEventListener('click',()=>{
+  document.getElementById('navLinks').classList.toggle('open');
+});
+
+// BACK TO TOP
+const btt=document.getElementById('btt');
+window.addEventListener('scroll',()=>btt.classList.toggle('vis',window.scrollY>400));
+
+// SCROLL NAV
+const secs=document.querySelectorAll('section[id]');
+const links=document.querySelectorAll('nav a');
+new IntersectionObserver(entries=>{
+  entries.forEach(e=>{
+    if(e.isIntersecting){
+      links.forEach(a=>a.classList.remove('at','aa'));
+      const a=document.querySelector(`nav a[href="#${e.target.id}"]`);
+      if(a)a.classList.add(a.dataset.t==='A'?'aa':'at');
+    }
+  });
+},{threshold:.25}).observe&&secs.forEach(s=>new IntersectionObserver(entries=>{
+  entries.forEach(e=>{
+    if(e.isIntersecting){
+      links.forEach(a=>a.classList.remove('at','aa'));
+      const a=document.querySelector(`nav a[href="#${e.target.id}"]`);
+      if(a)a.classList.add(a.dataset.t==='A'?'aa':'at');
+    }
+  });
+},{threshold:.25}).observe(s));
+
+
+// ===== GOOGLE SHEETS SENDEN =====
+const WEBAPP_URL = "https://script.google.com/macros/s/AKfycbydCF8dGUb_yPdhOSme1FNYVoYUYsuQs4BPazK9k45XmSylNRRljOnxhHF4tiiOHZf12Q/exec";
+
+function collectData() {
+  const name = document.getElementById("teilnehmer-name")?.value?.trim() || "Unbekannt";
+  const validDone = [...done].filter(k => progressKeys.has(k));
+  const pct = Math.round(validDone.length / TOTAL * 100);
+  const ampel = {};
+  document.querySelectorAll(".komp-row").forEach((row, i) => {
+    const active = row.querySelector(".ampel-btn.active");
+    ampel["ampel_" + i] = active ? (active.classList.contains("g") ? "g" : active.classList.contains("y") ? "y" : "r") : "";
+  });
+  const texts = {};
+  document.querySelectorAll("textarea[id]").forEach(el => { texts[el.id] = el.value; });
+  const luecken = {};
+  document.querySelectorAll('.luecke[id]').forEach(el => { luecken[el.id] = el.value; });
+  const abgrenzung = {};
+  document.querySelectorAll('#abgr-ja,#abgr-nein').forEach(zone => { abgrenzung[zone.id] = [...zone.querySelectorAll('.chip')].map(c=>c.textContent.trim()); });
+  const rollenZuordnung = {};
+  document.querySelectorAll('.dnd-targets .drop-zone').forEach(zone => { rollenZuordnung[zone.dataset.zone] = [...zone.querySelectorAll('.chip')].map(c=>c.textContent.trim()); });
+  const branching = activeSceneId();
+  const grenzsaetze = [...document.querySelectorAll('.anno-sent.grenze')].map(s=>s.textContent.trim());
+  const fehlerAnalysen = [...document.querySelectorAll('.fehler-card .loesung-box.show')].length;
+  const checklist = {};
+  document.querySelectorAll('#gelingen input[type=checkbox]').forEach(cb => { checklist[cb.id] = cb.checked; });
+  const KEYS = [...progressKeys];
+  const row = {name, modul:"Band 1 Modul 1", erledigt:validDone.length+" / "+TOTAL, fortschritt:pct, ampel, texts, luecken, abgrenzung, rollenZuordnung, branching, grenzsaetze, fehlerAnalysen, checklist, timestamp:new Date().toISOString()};
+  KEYS.forEach(k => { row[k] = done.has(k) ? 1 : 0; });
+  return row;
+}
+
+function textLen(id){
+  return (document.getElementById(id)?.value || '').trim().length;
+}
+
+function wordCount(id){
+  const text = (document.getElementById(id)?.value || '').trim();
+  return text ? text.split(/\s+/).filter(Boolean).length : 0;
+}
+
+function countFilled(ids, minLen){
+  return ids.filter(id => textLen(id) >= minLen).length;
+}
+
+function ampelComplete(){
+  return [...document.querySelectorAll('.komp-row')].every(row => row.querySelector('.ampel-btn.active'));
+}
+
+function checklistComplete(){
+  return [...document.querySelectorAll('#gelingen input[type=checkbox]')].every(cb => cb.checked);
+}
+
+function validateSubmission(show=false){
+  const name = document.getElementById('teilnehmer-name')?.value?.trim() || '';
+  const validDone = [...done].filter(k => progressKeys.has(k));
+  const allDone = validDone.length >= TOTAL;
+  const missing = [];
+  if(name.length < 3) missing.push('Name oben eintragen.');
+  if(!allDone) missing.push('Alle 17 Pflichtaufgaben bearbeiten und markieren.');
+  [...progressKeys].forEach(k => { if(!done.has(k) && !['a1','a3'].includes(k)) { /* Detailprüfung erfolgt beim Markieren. */ } });
+  if(wordCount('fallgutachten-text') < 350) missing.push('Fallgutachten mit mindestens 350 Wörtern ausformulieren.');
+  if(textLen('gelingen-text') < 300) missing.push('Gelingensnachweis mit mindestens 300 Zeichen ausformulieren.');
+  if(countFilled(['r1a','r1b','r1c','r2a','r2b','r2c'],80) < 3) missing.push('Mindestens drei Reflexionsfelder mit je mindestens 80 Zeichen ausfüllen.');
+  if(countFilled(['t1','t2','t3'],50) < 3) missing.push('Alle drei Transferfelder konkret ausfüllen.');
+  if(!ampelComplete()) missing.push('Alle fünf Kompetenz-Ampeln setzen.');
+  if(!checklistComplete()) missing.push('Alle fünf Prüfpunkte im Gelingensnachweis bestätigen.');
+  const msg = missing.length ? '<b>Vor dem Senden noch offen:</b><br>' + missing.map(m=>'• '+m).join('<br>') : 'Alle Pflichtteile sind erfüllt. Sie können jetzt senden.';
+  ['send-validation','gelingen-validation'].forEach(id => {
+    const el = document.getElementById(id);
+    if(el){ el.innerHTML = msg; el.classList.toggle('show', show || missing.length>0); el.style.background = missing.length ? 'var(--amber2)' : 'var(--green2)'; el.style.borderLeftColor = missing.length ? 'var(--amber)' : 'var(--green)'; }
+  });
+  return {ok: missing.length===0, missing};
+}
+
+function updateHeaderSendBtn() {
+  const state = validateSubmission(false);
+  const buttons = [document.getElementById('header-send-btn'), document.getElementById('send-btn')].filter(Boolean);
+  buttons.forEach(btn => {
+    btn.disabled = !state.ok;
+    btn.style.opacity = state.ok ? '1' : '0.5';
+    btn.style.cursor = state.ok ? 'pointer' : 'not-allowed';
+  });
+}
+
+async function sendToSheets() {
+  const state = validateSubmission(true);
+  if(!state.ok){
+    const first = document.getElementById('teilnehmer-name');
+    if(first && !first.value.trim()) first.focus();
+    return;
+  }
+  const buttons = [document.getElementById('header-send-btn'), document.getElementById('send-btn')].filter(Boolean);
+  const status = document.getElementById('send-status');
+  const headerStatus = document.getElementById('header-send-status');
+  buttons.forEach(btn => { btn.disabled = true; btn.textContent = 'Wird gesendet...'; });
+  if(status){ status.textContent = ''; }
+  if(headerStatus){ headerStatus.textContent = ''; }
+  try {
+    const res = await fetch(WEBAPP_URL, {
+      method: 'POST',
+      headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify(collectData())
+    });
+    const json = await res.json();
+    if(json.status === 'ok') {
+      if(status){ status.textContent = '✓ Erfolgreich gesendet.'; status.style.color = 'green'; }
+      if(headerStatus){ headerStatus.textContent = '✓ Gesendet'; headerStatus.style.color = '#c8e6c9'; }
+    } else {
+      if(status){ status.textContent = 'Fehler: ' + (json.message || 'Unbekannt'); status.style.color = 'red'; }
+      if(headerStatus){ headerStatus.textContent = '✗ Fehler'; headerStatus.style.color = '#ffcdd2'; }
+    }
+  } catch(e) {
+    if(status){ status.textContent = '✗ Verbindungsfehler. Bitte erneut versuchen.'; status.style.color = 'red'; }
+    if(headerStatus){ headerStatus.textContent = '✗ Verbindungsfehler'; headerStatus.style.color = '#ffcdd2'; }
+  } finally {
+    buttons.forEach(btn => { btn.disabled = false; btn.textContent = 'Jetzt senden'; });
+    updateHeaderSendBtn();
+  }
+}
+</script>
+</body>
+</html>
