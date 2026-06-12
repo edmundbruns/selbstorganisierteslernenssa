@@ -5,13 +5,13 @@
 <meta name="viewport" content="width=device-width,initial-scale=1"/>
 <title>SOL-Lernpfad Schulsozialarbeit Niedersachsen | Band 1 Modul 1, optimiert</title>
 <style>
-:root{
+:root{h
   --bg:#f4f6fa;--ink:#172033;--muted:#5d667a;--line:#d4dcea;
   --shadow:0 10px 28px rgba(23,32,51,.07);--radius:18px;
   --tb:#1a3d6b;--tb2:linear-gradient(135deg,#1a3d6b,#2a5fa8);--ta:#184f8f;--tal:#dce8f5;--tbg:#eef2f8;--tbd:#b8c8e0;
   --ab:#1c5c35;--ab2:linear-gradient(135deg,#1c5c35,#2e8b57);--aa:#1f7a4d;--aal:#e4f3ea;--abg:#f5f9f4;--abd:#a8ceaf;
   --red:#9b2c2c;--red2:#fdeaea;--amber:#7a4f00;--amber2:#fff3d0;--green:#1f7a4d;--green2:#e4f3ea;--acc:#1f7a4d;--border:#d4dcea;--card:#fff;
-}hh
+}hhh
 *{box-sizing:border-box;margin:0;padding:0}
 body{font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;background:var(--bg);color:var(--ink);line-height:1.65;font-size:1rem}
 .wrap{max-width:1120px;margin:0 auto;padding:0 20px}
@@ -315,7 +315,7 @@ footer{padding:22px;color:var(--muted);text-align:center;font-size:.83rem;border
   <div class="pillrow" style="margin-top:12px;gap:10px;align-items:center">
     <label for="teilnehmer-name" style="font-weight:600;color:#fff">Ihr Name:</label>
     <input id="teilnehmer-name" type="text" placeholder="Vorname Nachname" style="padding:6px 12px;border-radius:6px;border:none;font-size:1rem;min-width:200px;background:#fff;color:#1a2340" oninput="saveCurrentState(); updateHeaderSendBtn()">
-    <button id="header-send-btn" class="send-button" onclick="sendToSheets()" style="padding:6px 16px;font-size:.9rem">Jetzt senden</button>
+    <label for="teilnehmer-email" style="font-weight:600;color:#fff">Ihre E-Mail:</label><input id="teilnehmer-email" type="email" placeholder="name@beispiel.de" style="padding:6px 12px;border-radius:6px;border:none;font-size:1rem;min-width:200px;background:#fff;color:#1a2340" oninput="updateHeaderSendBtn()"><button id="header-send-btn" class="send-button" onclick="sendToSheets()" style="padding:6px 16px;font-size:.9rem">Jetzt senden</button>
     <span id="header-send-status" style="font-size:.8rem;color:#c8e6c9;margin-left:4px"></span>
   </div>
   <div style="font-size:.78rem;color:#c8d8f0;margin-top:4px">Geben Sie Ihren Namen ein. Sie können jederzeit senden, auch wenn noch Aufgaben offen sind; offene Stellen werden freundlich markiert.</div>
@@ -2252,5 +2252,5 @@ window.addEventListener('load', () => {
   }
 });
 </script>
-</body>
+<script>(function(){var _ou=window.updateHeaderSendBtn,_os=window.sendToSheets;function ge(){var el=document.getElementById('teilnehmer-email');return el?el.value.trim():'';}function eo(e){return e.length>3&&e.includes('@')&&e.includes('.');}window.updateHeaderSendBtn=function(){_ou();if(!eo(ge())){['header-send-btn','send-btn','send-btn-2'].forEach(function(id){var b=document.getElementById(id);if(b)b.disabled=true;});}};['collectDataM1','collectDataM2','collectDataM3','collectDataM4'].forEach(function(fn){if(!window[fn])return;var orig=window[fn];window[fn]=function(){var d=orig();d.email=ge();return d;};});window.sendToSheets=function(){var e=ge();if(!eo(e)){if(window.setStatus)setStatus('Bitte zuerst eine gültige E-Mail-Adresse eingeben.',false);return;}_os();};})();</script></body>
 </html>
